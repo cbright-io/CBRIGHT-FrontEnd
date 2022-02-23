@@ -1,0 +1,154 @@
+:root {
+    --ff-primary: "Roboto", sans-serif;
+    --ff-accent: "Roboto", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* nav section */
+
+nav {
+    background-color: white;
+
+    height: fit-content;
+    width: 500px;
+
+    border-radius: 55px;
+
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 2px 1fr 2px 1fr;
+    gap: 0px 0px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+nav button {
+    font-family: var(--ff-accent);
+    font-size: 35px;
+
+    height: 110px;
+    width: 300px;
+
+    background-color: white;
+
+    border: none;
+}
+
+nav button:hover {
+    transition: 1.5s;
+    transform: scale(102%);
+
+    background-color: rgb(116, 101, 136);
+    color: rgb(34, 34, 34);
+}
+
+.grid-div {
+    height: 60%;
+    border: 1px solid black;
+}
+
+.grid-button {
+    display: flex;
+    align-items: center;
+}
+
+#nav-left {
+    grid-area: 1 / 1 / 2 / 2;
+    border-top-left-radius: 55px;
+    border-bottom-left-radius: 55px;
+}
+
+#grid-div-left {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#nav-center {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+#grid-div-right {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+#nav-right {
+    grid-area: 1 / 5 / 2 / 6;
+    border-top-right-radius: 55px;
+    border-bottom-right-radius: 55px;
+}
+
+/* landing section */
+
+#landing-section {
+    height: 110vh;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#landing-section aside {
+    width: 50vw;
+
+    background: rgb(44, 15, 85);
+    background: linear-gradient(
+        13deg,
+        rgba(44, 15, 85, 1) 0%,
+        rgba(65, 29, 115, 1) 100%
+    );
+}
+
+#landing-section aside div {
+    margin: 80px 15%;
+}
+
+#landing-section-logo {
+    height: 190px;
+    width: 90px;
+
+    object-fit: fill;
+}
+
+#catchphrase {
+    font-family: var(--ff-accent);
+    font-size: 65px;
+
+    color: rgb(255, 255, 255);
+
+    margin-top: 140px;
+}
+
+#landing-section button {
+    font-family: var(--ff-accent);
+    font-size: 25px;
+    font-weight: 700;
+
+    height: 7rem;
+    width: 30rem;
+
+    border-radius: 0px 25px 25px 25px;
+    border: none;
+
+    margin-top: 140px;
+}
+
+#lading-section-image {
+    height: 100%;
+    width: 50vw;
+
+    object-fit: cover;
+}
+
+/* landing section */
