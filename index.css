@@ -124,6 +124,8 @@ nav a:hover {
 /* landing section */
 
 main {
+    width: 100vw;
+
     overflow-x: hidden;
 }
 
@@ -189,6 +191,8 @@ main {
 /* app store section */
 
 #appstore-section {
+    width: 100vw;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -294,6 +298,8 @@ main {
 
 /* partners  section */
 #partners-section {
+    width: 100vw;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,11 +412,12 @@ main {
 /* strategie-seciton */
 
 #strategie-seciton {
+    height: 90vh;
+    width: 100vw;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    height: 90vh;
 
     margin-top: 10rem;
 }
@@ -587,6 +594,8 @@ main {
 /* steps section */
 
 #steps-section {
+    width: 100vw;
+
     margin-top: 10rem;
 
     display: flex;
@@ -670,7 +679,7 @@ main {
 
 #thousand-lights-section {
     height: 70vh;
-
+    width: 100vw;
     margin-top: 20rem;
 
     display: flex;
@@ -767,7 +776,7 @@ footer li a {
     margin-top: 3rem;
 
     height: 60px;
-    width: 100%;
+    width: 100vw;
 }
 
 @media screen and (max-width: 1200px) {
