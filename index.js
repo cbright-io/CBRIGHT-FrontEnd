@@ -18,4 +18,4 @@ function ticker1() {
     }
 }
 
-alert("This site is still in production!");
+// alert("This site is still in production!");
