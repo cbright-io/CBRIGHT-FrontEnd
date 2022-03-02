@@ -38,3 +38,5 @@ function ticker2() {
         );
     }
 }
+
+alert("This site is still in production!");
