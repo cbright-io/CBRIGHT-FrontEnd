@@ -8,6 +8,11 @@
         var(--marquee-width) / var(--marquee-elements-displayed)
     );
     --marquee-animation-duration: 50s;
+
+    --purple: rgb(74, 37, 125);
+    --navy: rgb(22, 24, 44);
+    --turquoise-green: rgb(91, 239, 178);
+    --turquoise-blue: rgb(10, 185, 186);
 }
 
 * {
@@ -112,6 +117,8 @@ nav a:hover {
     grid-area: 1 / 5 / 2 / 6;
     border-top-right-radius: 55px;
     border-bottom-right-radius: 55px;
+
+    line-height: 85px;
 }
 
 /* landing section */
@@ -331,9 +338,7 @@ main {
     display: flex;
     animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
-.marquee-content:hover {
-    animation-play-state: paused;
-}
+
 @keyframes scrolling {
     0% {
         transform: translateX(0);
@@ -362,6 +367,40 @@ main {
     width: 300px;
     height: 50px;
     object-fit: contain;
+}
+
+#founders-section {
+    padding: 8rem 7rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#founders {
+    height: 30rem;
+    width: 45rem;
+}
+
+#founders-section aside {
+    width: 50%;
+}
+
+#founders-section aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#founders-section h3 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#founders-section article {
+    font-family: var(--ff-primary);
+    font-size: 20px;
+
+    margin-top: 1.7rem;
 }
 
 /* strategie-seciton */
@@ -451,7 +490,7 @@ main {
 }
 
 .list-style {
-    background-color: rgba(65, 29, 115, 1);
+    background-color: var(--purple);
 
     height: 50px;
     width: 50px;
@@ -460,7 +499,7 @@ main {
 }
 
 #iphone-banner button {
-    background-color: rgba(65, 29, 115, 1);
+    background-color: var(--purple);
     color: #fff;
     font-family: var(--ff-accent);
     font-size: 25px;
@@ -537,6 +576,14 @@ main {
     border: 2px solid #eee;
 }
 
+.glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(-50%);
+}
 /* steps section */
 
 #steps-section {
@@ -660,7 +707,7 @@ main {
 /* footer-section */
 
 footer {
-    background-color: #000;
+    background-color: var(--turquoise-blue);
 
     display: flex;
     flex-direction: column;
@@ -676,6 +723,7 @@ footer {
 
 footer ul {
     margin-top: 4rem;
+    list-style: none;
 }
 
 footer li {
@@ -714,7 +762,7 @@ footer li a {
 }
 
 #band {
-    background-color: rgb(44, 15, 85);
+    background-color: var(--turquoise-green);
 
     margin-top: 3rem;
 
@@ -735,6 +783,12 @@ footer li a {
         background-size: cover;
 
         width: 100vw;
+    }
+
+    #landing-section button {
+        font-size: 15px;
+
+        margin-top: 50px;
     }
 }
 

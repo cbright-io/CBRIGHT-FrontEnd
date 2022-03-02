@@ -1,6 +1,6 @@
 const root = document.documentElement;
+
 ticker1();
-ticker2();
 
 function ticker1() {
     const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
@@ -18,25 +18,4 @@ function ticker1() {
     }
 }
 
-function ticker2() {
-    const marqueeStrategyElementsDisplayed = getComputedStyle(
-        root
-    ).getPropertyValue("--marquee-strategy-elements-displayed");
-
-    const marqueeStrategyContent = document.querySelector(
-        "ul.marquee-strategy-content"
-    );
-
-    root.style.setProperty(
-        "--marquee-strategy-elements",
-        marqueeStrategyContent.children.length
-    );
-
-    for (let i = 0; i < marqueeStrategyElementsDisplayed; i++) {
-        marqueeStrategyContent.appendChild(
-            marqueeStrategyContent.children[i].cloneNode(true)
-        );
-    }
-}
-
-alert("This site is still in production!");
+// alert("This site is still in production!");
