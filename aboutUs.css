@@ -1,0 +1,36 @@
+/* founders-section */
+
+#founders-section {
+    padding: 8rem 7rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#founders {
+    height: 30rem;
+    width: 45rem;
+}
+
+#founders-section aside {
+    width: 50%;
+}
+
+#founders-section aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#founders-section h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#founders-section article {
+    font-family: var(--ff-accent);
+    font-size: 40px;
+    font-weight: 900;
+
+    margin-top: 1.7rem;
+}

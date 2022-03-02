@@ -9,10 +9,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@1,500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="index.css" />
 
         <script src="index.js" defer></script>
 
@@ -20,11 +20,11 @@
     </head>
     <body>
         <nav>
-            <button id="nav-left">Home</button>
+            <a href="index.html" id="nav-left">Home</a>
             <div class="grid-div" id="grid-div-left"></div>
-            <button id="nav-center">Mission</button>
+            <a href="aboutUs.html" id="nav-center">About Us</a>
             <div class="grid-div" id="grid-div-right"></div>
-            <button id="nav-right">HYBRIGHT</button>
+            <a id="nav-right">B<sup>2</sup>B</a>
         </nav>
 
         <main>
@@ -76,55 +76,32 @@
             </section>
 
             <section id="partners-section">
-                <h3>UNSERE & DEINE PARTNER</h3>
+                <h3>OUR & YOUR PARTNERS</h3>
 
                 <div class="marquee">
                     <ul class="marquee-content">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                        <li>7</li>
-                        <li>8</li>
-                        <li>9</li>
-                        <li>10</li>
-                        <li>11</li>
-                        <li>12</li>
+                        <li><img src="assets/partners/lime.svg" /></li>
+                        <li><img src="assets/partners/spotify.svg" /></li>
+                        <li><img src="assets/partners/zalando.svg" /></li>
+                        <li>
+                            <img src="assets/partners/scalable-capital.png" />
+                        </li>
+                        <li>
+                            <img src="assets/partners/trade-republic.png" />
+                        </li>
                     </ul>
                 </div>
             </section>
 
-            <section id="founders-section">
-                <aside>
-                    <div>
-                        <img id="founders" src="assets/founders.png" />
-                    </div>
-                </aside>
-
-                <aside>
-                    <div>
-                        <h3>UNSERE MISSION</h3>
-                        <article>
-                            Our vision,<br />
-                            takes more.<br />
-                            Shapes our<br />
-                            future.
-                        </article>
-                    </div>
-                </aside>
-            </section>
-
             <section id="strategie-seciton">
-                <h2>Für jedes Zeil die richtige Strategie</h2>
+                <h2>The right strategy for every day</h2>
                 <div id="strategie-anchor">
                     <div id="iphone-banner">
                         <aside id="iphone">
                             <img src="assets/iphone-removed.png" />
                         </aside>
 
-                        <aside>
+                        <aside id="iphone-text">
                             <ul>
                                 <li>
                                     <div class="list-style"></div>
@@ -150,7 +127,7 @@
 
                     <div class="marquee-strategy">
                         <ul class="marquee-strategy-content">
-                            <li>1</li>
+                            <li></li>
                             <li>2</li>
                             <li>3</li>
                             <li>4</li>
@@ -284,9 +261,9 @@
         <footer>
             <div id="nav-footer">
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Mission</a></li>
-                    <li><a>HYBRIGHT</a></li>
+                    <li><a href="index.html" id="nav-left">Home</a></li>
+                    <li><a href="aboutUs.html" id="nav-center">About Us</a></li>
+                    <li><a id="nav-right">B<sup>2</sup>B</a></li>
                 </ul>
 
                 <ul>

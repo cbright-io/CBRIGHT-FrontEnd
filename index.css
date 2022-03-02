@@ -1,7 +1,6 @@
 :root {
-    --ff-primary: "Roboto", sans-serif;
-    --ff-accent: "Roboto", sans-serif;
-
+    --ff-primary: "Barlow", sans-serif;
+    --ff-accent: "Roboto Mono", monospace;
     --marquee-width: 100vw;
     --marquee-height: 12vh;
     --marquee-elements-displayed: 5;
@@ -9,10 +8,6 @@
         var(--marquee-width) / var(--marquee-elements-displayed)
     );
     --marquee-animation-duration: 50s;
-
-    --marquee-strategy-width: 100vw;
-    --marquee-strategy-elements-displayed: 6;
-    --marquee-strategy-animation-duration: 30s;
 }
 
 * {
@@ -35,8 +30,8 @@ h6 {
 nav {
     background-color: white;
 
-    height: fit-content;
-    width: 500px;
+    height: min-content;
+    width: 60vh;
 
     border-radius: 55px;
 
@@ -57,11 +52,16 @@ nav {
     justify-content: center;
 }
 
-nav button {
+nav a {
     font-family: var(--ff-accent);
     font-size: 35px;
+    color: #000;
+    line-height: 100px;
 
-    height: 110px;
+    text-decoration: none;
+    text-align: center;
+
+    height: 100px;
     width: 250px;
 
     background-color: white;
@@ -70,7 +70,11 @@ nav button {
     transition: ease-in-out 1.1s;
 }
 
-nav button:hover {
+nav sup {
+    font-size: 1.5rem;
+}
+
+nav a:hover {
     transform: scale(105%);
 
     color: rgb(34, 34, 34);
@@ -126,11 +130,11 @@ main {
 #landing-section aside {
     width: 50vw;
 
-    background: rgb(44, 15, 85);
+    background: rgb(15, 22, 85);
     background: linear-gradient(
         13deg,
         rgba(44, 15, 85, 1) 0%,
-        rgba(65, 29, 115, 1) 100%
+        rgb(38, 29, 115) 100%
     );
 }
 
@@ -186,7 +190,7 @@ main {
 }
 
 #appstore-section article {
-    font-family: var(--ff-accent);
+    font-family: var(--ff-primary);
     font-size: 5rem;
     font-weight: 800;
     text-align: center;
@@ -287,12 +291,12 @@ main {
     flex-direction: column;
     align-items: center;
 
-    padding-top: 10rem;
+    margin-top: 7rem;
 }
 
 #partners-section h3 {
     font-size: 30px;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .marquee {
@@ -303,6 +307,7 @@ main {
     overflow: hidden;
     position: relative;
 }
+
 .marquee:before,
 .marquee:after {
     position: absolute;
@@ -343,55 +348,20 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
+
     flex-shrink: 0;
     width: var(--marquee-element-width);
     max-height: 100%;
     font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
     white-space: nowrap;
+
+    margin-right: max(140px, 3rem);
 }
 
 .marquee-content li img {
-    width: 100%;
-    /* height: 100%; */
-    border: 2px solid #eee;
-}
-
-/* founders-section */
-
-#founders-section {
-    padding: 8rem 7rem;
-
-    display: flex;
-    flex-direction: row;
-}
-
-#founders {
-    height: 30rem;
-    width: 45rem;
-}
-
-#founders-section aside {
-    width: 50%;
-}
-
-#founders-section aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#founders-section h3 {
-    font-size: 30px;
-    font-weight: 600;
-}
-
-#founders-section article {
-    font-family: var(--ff-accent);
-    font-size: 40px;
-    font-weight: 900;
-
-    margin-top: 1.7rem;
+    width: 300px;
+    height: 50px;
+    object-fit: contain;
 }
 
 /* strategie-seciton */
@@ -400,6 +370,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    height: 90vh;
+
+    margin-top: 10rem;
 }
 
 #strategie-seciton h2 {
@@ -408,24 +382,39 @@ main {
 
 #strategie-anchor {
     width: 100%;
-
-    display: flex;
-    justify-content: center;
-
-    margin-top: 2rem;
+    height: 100vh;
+    margin-top: 15rem;
     position: relative;
 }
 
 #iphone-banner {
-    width: 60%;
+    width: 80%;
+
+    position: absolute;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 
     margin-top: 5rem;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     z-index: 1;
+}
+
+#iphone {
+    position: absolute;
+    top: 3rem;
+    left: 0px;
+}
+#iphone img {
+    height: 700px;
+    width: 300px;
+}
+
+#iphone-text {
+    position: absolute;
+    right: -40px;
+    top: -230px;
 }
 
 #iphone-banner aside {
@@ -464,8 +453,8 @@ main {
 .list-style {
     background-color: rgba(65, 29, 115, 1);
 
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
 
     border-radius: 30px;
 }
@@ -484,7 +473,7 @@ main {
     border-radius: 0px 25px 25px 25px;
     border: none;
 
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .marquee-strategy {
@@ -496,7 +485,7 @@ main {
 
     overflow: hidden;
     position: absolute;
-    top: 33rem;
+    top: 230px;
 }
 
 .marquee-strategy:before,
@@ -523,19 +512,13 @@ main {
     list-style: none;
     height: 100%;
     display: flex;
-    animation: scrolling var(--marquee-strategy-animation-duration) linear
-        infinite;
-}
-
-.marquee-strategy-content:hover {
-    animation-play-state: paused;
 }
 
 .marquee-strategy-content li {
     background-color: rgb(141, 52, 52);
 
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 
     margin: 0px 60px;
 
@@ -584,15 +567,6 @@ main {
     padding-left: 10em;
 }
 
-.steps:nth-of-type(2) aside:nth-of-type(1) div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    padding-left: 0;
-    padding-right: 10rem;
-}
-
 #steps-section h2 {
     font-size: 35px;
 }
@@ -603,12 +577,12 @@ main {
 }
 
 #steps-section article {
-    font-family: var(--ff-accent);
+    font-family: var(--ff-primary);
     font-weight: 100;
 
     margin-top: 2rem;
 
-    width: 60%;
+    width: 300px;
 }
 
 .steps-button {
@@ -625,7 +599,24 @@ main {
     border-radius: 0px 25px 25px 25px;
     border: none;
 
-    margin-top: 5rem;
+    margin-top: 3rem;
+}
+
+.steps:nth-of-type(2) aside:nth-of-type(1) div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding-left: 0;
+    padding-right: 10rem;
+}
+
+.steps:nth-of-type(2) aside:nth-of-type(1) h3 {
+    text-align: right;
+}
+
+.steps:nth-of-type(2) aside:nth-of-type(1) article {
+    text-align: right;
 }
 
 /* thousand lights */
@@ -662,6 +653,8 @@ main {
 
 #committees-section img {
     margin: 0px 5rem;
+    height: 80%;
+    width: 50%;
 }
 
 /* footer-section */
@@ -694,6 +687,8 @@ footer li a {
 
     font-family: var(--ff-accent);
     font-size: 50px;
+
+    text-decoration: none;
 }
 
 #logos {
@@ -725,4 +720,92 @@ footer li a {
 
     height: 60px;
     width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+
+    #landing-section img {
+        display: none;
+    }
+    #landing-section aside {
+        background-image: url(assets/landing-page-image.jpg);
+        background-size: cover;
+
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+    }
+
+    .steps aside {
+        margin: 1rem;
+        padding: 0px;
+        align-items: center;
+        width: 80%;
+    }
+
+    .steps aside div {
+        padding-left: 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps aside article {
+        font-family: var(--ff-primary);
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #steps-section article {
+        font-family: var(--ff-primary);
+        width: 100%;
+    }
+
+    .steps:nth-of-type(2) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .steps:nth-of-type(2) aside:nth-of-type(1) div {
+        padding-right: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps:nth-of-type(2) aside:nth-of-type(1) article {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #committees-section div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #committees-section img {
+        margin: 0px;
+        margin-right: 0px;
+    }
+
+    #nav-footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
