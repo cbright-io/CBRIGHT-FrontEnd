@@ -411,7 +411,7 @@ main {
 
 /* strategie-seciton */
 
-#strategie-seciton {
+#strategy-section {
     height: 90vh;
     width: 100vw;
 
@@ -422,11 +422,11 @@ main {
     margin-top: 10rem;
 }
 
-#strategie-seciton h2 {
+#strategy-section h2 {
     font-size: 45px;
 }
 
-#strategie-anchor {
+#strategy-anchor {
     width: 100%;
     height: 100vh;
     margin-top: 15rem;
@@ -697,6 +697,10 @@ main {
 
 /* sponsors-section */
 
+#sponsors-section {
+    display: none;
+}
+
 /* committees-section */
 #committees-section {
     margin-top: 8rem;
@@ -802,6 +806,53 @@ footer li a {
 }
 
 @media screen and (max-width: 1000px) {
+    #landing-section aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #appstore-section {
+        padding-top: 3rem;
+    }
+
+    #appstore-section h2 {
+        font-size: 3rem;
+    }
+
+    #scroll-magic {
+        height: 50vh;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #appstore-section div {
+        background-color: transparent;
+    }
+
+    #appstore-section img {
+        width: 270px;
+        height: 400px;
+
+        object-fit: cover;
+    }
+
+    #download-options {
+        margin-top: 5rem;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #download-options button {
+        height: 75px;
+        width: 200px;
+
+        object-fit: cover;
+    }
+
     .steps {
         flex-direction: column;
         align-items: center;
@@ -851,6 +902,10 @@ footer li a {
 }
 
 @media screen and (max-width: 600px) {
+    /* #landing-section {
+        padding-bottom: 1rem;
+    } */
+
     #landing-section button {
         margin-top: 3rem;
 
@@ -872,6 +927,78 @@ footer li a {
         margin: 0px;
         margin-right: 0px;
     }
+    #founders-section {
+        display: none;
+    }
+
+    #iphone img {
+        display: none;
+    }
+
+    #iphone-text {
+        position: static;
+        width: 100%;
+    }
+
+    #strategy-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #strategy-section h2 {
+        text-align: center;
+
+        margin-top: 2rem;
+    }
+
+    #strategy-section {
+        margin-top: 1rem;
+    }
+
+    #strategy-anchor {
+        position: static;
+
+        margin-top: 0;
+    }
+
+    .list-style {
+        height: 25px;
+    }
+
+    #iphone-banner {
+        position: static;
+    }
+
+    #iphone-banner aside {
+        margin: 0px;
+    }
+
+    #iphone-text {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #iphone-text button {
+        width: 15rem;
+        height: 5rem;
+    }
+
+    #steps-section {
+        margin-top: 15rem;
+    }
+
+    #steps-section h2 {
+        text-align: center;
+    }
+
+    .steps:nth-of-type(2) aside:nth-of-type(1) h3 {
+        align-items: center;
+    }
+
+    #strategy-section {
+        text-emphasis: center;
+    }
 
     #nav-footer ul {
         display: flex;
@@ -881,5 +1008,16 @@ footer li a {
 
     #partners-section {
         display: none;
+    }
+
+    .steps:nth-of-type(2) aside:nth-of-type(1) article,
+    h3 {
+        text-align: center;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
