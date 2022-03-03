@@ -857,12 +857,6 @@ footer li a {
         object-fit: cover;
     }
 
-    .steps {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10rem;
-    }
-
     .steps aside {
         margin: 1rem;
         padding: 0px;
@@ -906,6 +900,16 @@ footer li a {
 }
 
 @media screen and (max-width: 600px) {
+    h2 {
+        text-align: center;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* #landing-section {
         padding-bottom: 1rem;
     } */
@@ -978,6 +982,12 @@ footer li a {
         margin: 0px;
     }
 
+    .steps {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
     #iphone-text {
         width: 100%;
         margin: 0px;
@@ -1019,9 +1029,7 @@ footer li a {
         text-align: center;
     }
 
-    main section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    footer li a {
+        font-size: 1.5rem;
     }
 }
