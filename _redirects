@@ -1,4 +1,9 @@
-/              /index.html
-/contact       /sub_pages/contact.html
-/about_us      /sub_pages/aboutUs.html
-/B2B           /sub_pages/B2B
+/                       /index.html
+/about_us               /sub_pages/aboutUs.html
+/B2B                    /sub_pages/B2B.html
+/contact                /sub_pages/contact.html
+/Datenschutzerklärung   /sub_pages/Datenschutzerklärung
+/FaQ                    /sub_pages/faq.html
+/impressum              /sub_pages/impressum.html
+
+
