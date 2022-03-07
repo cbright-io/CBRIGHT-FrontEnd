@@ -751,15 +751,25 @@ footer li a {
     color: white;
 
     font-family: var(--ff-accent);
-    font-size: 50px;
+    font-size: 30px;
 
     text-decoration: none;
 }
 
+footer h2 {
+    font-size: 30px;
+    color: rgb(64, 64, 70);
+}
+
+footer img {
+    fill: red;
+
+    height: 80px;
+    width: 80px;
+}
+
 #logos {
     width: 100%;
-
-    margin-top: 3rem;
 
     display: flex;
     justify-content: space-around;
