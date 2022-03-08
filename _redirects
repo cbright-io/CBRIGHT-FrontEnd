@@ -1,10 +1,10 @@
-/home                   /index.html
-/about_us               /sub_pages/aboutUs.html
-/B2B                    /sub_pages/B2B.html
-/FaQ                    /sub_pages/faq.html
-/contact                /sub_pages/contact.html
-/imprint                /sub_pages/imprint.html
-/PrivacyPolicy          /sub_pages/privacyPolicy.html
-/Cookies                /Cookies
-/TermsOfService         /sub_pages/termsOfService.html
+# /home                   /index.html
+# /about_us               /sub_pages/aboutUs.html
+# /B2B                    /sub_pages/B2B.html
+# /FaQ                    /sub_pages/faq.html
+# /contact                /sub_pages/contact.html
+# /imprint                /sub_pages/imprint.html
+# /PrivacyPolicy          /sub_pages/privacyPolicy.html
+# /Cookies                /Cookies
+# /TermsOfService         /sub_pages/termsOfService.html
 
