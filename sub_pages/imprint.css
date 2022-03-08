@@ -62,48 +62,16 @@ nav a {
 /* main */
 
 main {
-    height: 100vh;
+    height: 80vh;
 }
 
 section {
     margin-top: 10rem;
-
-    width: 80vw;
 }
 
 article {
     margin-top: 2rem;
 
-    font-family: var(--ff-primary);
-}
-
-table {
-    width: 100%;
-
-    border-collapse: collapse;
-
-    margin-top: 3rem;
-}
-
-thead {
-    font-family: var(--ff-accent);
-    font-weight: 900;
-}
-
-th,
-tr {
-    border: 1px solid rgb(64, 64, 70);
-    font-weight: 100;
-}
-
-thead {
-    font-family: var(--ff-accent);
-    font-weight: 900;
-
-    background-color: rgb(213, 213, 214);
-}
-
-tr {
     font-family: var(--ff-primary);
 }
 
