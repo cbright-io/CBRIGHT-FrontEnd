@@ -1,6 +1,7 @@
 {
     "dependencies": {
         "gsap": "^3.9.1",
+        "handlebars": "^4.7.7",
         "install": "^0.13.0",
         "npm": "^8.5.2",
         "scrollmagic": "^2.0.8"
