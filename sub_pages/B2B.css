@@ -127,6 +127,50 @@ main {
     height: 80vh;
 }
 
+#landing-section {
+    height: 110vh;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#landing-section aside {
+    width: 50vw;
+
+    background: rgb(15, 22, 85);
+    background: linear-gradient(
+        13deg,
+        rgba(44, 15, 85, 1) 0%,
+        rgb(38, 29, 115) 100%
+    );
+}
+
+#landing-section aside div {
+    margin: 80px 15%;
+}
+
+#landing-section-logo {
+    height: 190px;
+    width: 90px;
+
+    object-fit: fill;
+}
+
+#catchphrase {
+    font-family: var(--ff-accent);
+    font-size: 65px;
+
+    color: rgb(255, 255, 255);
+
+    margin-top: 140px;
+}
+
+#lading-section-image {
+    height: 100%;
+    width: 50vw;
+
+    object-fit: cover;
+}
 /* footer */
 footer {
     background-color: var(--turquoise-blue);
