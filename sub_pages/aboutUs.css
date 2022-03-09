@@ -121,6 +121,49 @@ nav a:hover {
     line-height: 85px;
 }
 
+/* main */
+
+#landing-section {
+    height: 110vh;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#landing-section aside {
+    width: 50vw;
+
+    background: rgb(15, 22, 85);
+    background: linear-gradient(13deg, #4e3c29 0%, #a58d73 100%);
+}
+
+#landing-section aside div {
+    margin: 80px 15%;
+}
+
+#landing-section-logo {
+    height: 190px;
+    width: 90px;
+
+    object-fit: fill;
+}
+
+#catchphrase {
+    font-family: var(--ff-accent);
+    font-size: 65px;
+
+    color: rgb(255, 255, 255);
+
+    margin-top: 140px;
+}
+
+#lading-section-image {
+    height: 100%;
+    width: 50vw;
+
+    object-fit: cover;
+}
+
 /* founders-section */
 
 #founders-section {
@@ -156,4 +199,85 @@ nav a:hover {
     font-weight: 900;
 
     margin-top: 1.7rem;
+}
+
+#team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* footer */
+
+footer {
+    background-color: var(--turquoise-blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer ul {
+    margin-top: 4rem;
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer li a {
+    color: white;
+
+    font-family: var(--ff-accent);
+    font-size: 30px;
+
+    text-decoration: none;
+}
+
+footer h2 {
+    font-size: 30px;
+    color: rgb(64, 64, 70);
+}
+
+footer img {
+    fill: red;
+
+    height: 80px;
+    width: 80px;
+}
+
+#logos {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logos img {
+    height: 100px;
+    width: 50px;
+
+    object-fit: cover;
+}
+
+#logos img:nth-last-of-type(1) {
+    height: 75px;
+    width: 75px;
+}
+
+#band {
+    background-color: var(--turquoise-green);
+
+    margin-top: 3rem;
+
+    height: 60px;
+    width: 100vw;
 }
