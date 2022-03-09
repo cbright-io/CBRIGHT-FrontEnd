@@ -137,11 +137,11 @@ main {
 #landing-section aside {
     width: 50vw;
 
-    background: rgb(15, 22, 85);
+    background: rgb(22, 24, 44);
     background: linear-gradient(
         13deg,
-        rgba(44, 15, 85, 1) 0%,
-        rgb(38, 29, 115) 100%
+        rgb(22, 24, 44) 0%,
+        rgb(50, 55, 109) 100%
     );
 }
 
