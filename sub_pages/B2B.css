@@ -121,6 +121,12 @@ nav a:hover {
     line-height: 85px;
 }
 
+/* main */
+
+main {
+    height: 80vh;
+}
+
 /* footer */
 footer {
     background-color: var(--turquoise-blue);
