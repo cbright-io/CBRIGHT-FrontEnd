@@ -1,3 +1,20 @@
+:root {
+    --ff-primary: "Barlow", sans-serif;
+    --ff-accent: "Roboto Mono", monospace;
+    --marquee-width: 100vw;
+    --marquee-height: 12vh;
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(
+        var(--marquee-width) / var(--marquee-elements-displayed)
+    );
+    --marquee-animation-duration: 50s;
+
+    --purple: rgb(74, 37, 125);
+    --navy: rgb(22, 24, 44);
+    --turquoise-green: rgb(91, 239, 178);
+    --turquoise-blue: rgb(10, 185, 186);
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -54,8 +71,6 @@ footer h2 {
 }
 
 footer img {
-    fill: red;
-
     height: 80px;
     width: 80px;
 }
