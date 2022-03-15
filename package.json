@@ -1,9 +1,28 @@
 {
-    "dependencies": {
-        "gsap": "^3.9.1",
-        "handlebars": "^4.7.7",
-        "install": "^0.13.0",
-        "npm": "^8.5.2",
-        "scrollmagic": "^2.0.8"
-    }
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "gsap": "^3.9.1",
+    "handlebars": "^4.7.7",
+    "install": "^0.13.0",
+    "npm": "^8.5.2",
+    "scrollmagic": "^2.0.8"
+  },
+  "name": "hybright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harry-whorlow/HyBright.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harry-whorlow/HyBright/issues"
+  },
+  "homepage": "https://github.com/harry-whorlow/HyBright#readme",
+  "description": ""
 }

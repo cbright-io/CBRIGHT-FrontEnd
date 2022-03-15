@@ -1,13 +1,6 @@
 :root {
     --ff-primary: "Barlow", sans-serif;
     --ff-accent: "Roboto Mono", monospace;
-    --marquee-width: 100vw;
-    --marquee-height: 12vh;
-    --marquee-elements-displayed: 5;
-    --marquee-element-width: calc(
-        var(--marquee-width) / var(--marquee-elements-displayed)
-    );
-    --marquee-animation-duration: 50s;
 
     --purple: rgb(74, 37, 125);
     --navy: rgb(22, 24, 44);
@@ -29,6 +22,8 @@ h5,
 h6 {
     font-family: var(--ff-accent);
 }
+
+/* main */
 
 /* nav section */
 
@@ -133,8 +128,13 @@ nav a:hover {
 #landing-section aside {
     width: 50vw;
 
-    background: rgb(15, 22, 85);
-    background: linear-gradient(13deg, #4e3c29 0%, #a58d73 100%);
+    background: rgb(10, 185, 186);
+
+    background: linear-gradient(
+        13deg,
+        rgb(10, 185, 186) 0%,
+        rgb(91, 239, 178) 100%
+    );
 }
 
 #landing-section aside div {
