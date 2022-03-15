@@ -80,7 +80,7 @@ article {
 /* footer */
 
 footer {
-    background-color: var(--turquoise-blue);
+    background-color: var(--navy);
 
     display: flex;
     flex-direction: column;
