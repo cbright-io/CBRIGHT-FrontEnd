@@ -115,6 +115,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 2rem;
 }
 
 #nav-footer {
@@ -144,7 +146,7 @@ footer li a {
 
 footer h2 {
     font-size: 30px;
-    color: rgb(64, 64, 70);
+    color: rgb(158, 158, 158);
 }
 
 footer img {
