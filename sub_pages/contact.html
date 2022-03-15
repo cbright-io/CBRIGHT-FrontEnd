@@ -11,23 +11,31 @@
         <link rel="stylesheet" href="contact.css" />
     </head>
     <body>
+        <nav>
+            <a href="index.html" id="nav-left">Home</a>
+            <div class="grid-div" id="grid-div-left"></div>
+            <a href="/sub_pages/aboutUs.html" id="nav-center">About Us</a>
+            <div class="grid-div" id="grid-div-right"></div>
+            <a href="/sub_pages/B2B.html" id="nav-right">B<sup>2</sup>B</a>
+        </nav>
+
         <main>
+            <h2>Completing final <strong>pre-flight</strong> checks</h2>
+
             <form name="contact" method="POST" data-netlify="true">
                 <p>
-                    <label>Your Name: <input type="text" name="name" /></label>
-                </p>
-                <p>
-                    <label
-                        >Your Email: <input type="email" name="email"
-                    /></label>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Sign up to our Mailing-list"
+                    />
                 </p>
 
-                <p>
-                    <label>Message: <textarea name="message"></textarea></label>
-                </p>
                 <div data-netlify-recaptcha=""></div>
                 <p>
-                    <button type="submit">Send</button>
+                    <button type="submit">
+                        Go for <strong>Launch!</strong>
+                    </button>
                 </p>
             </form>
         </main>
