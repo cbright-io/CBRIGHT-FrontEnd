@@ -78,6 +78,8 @@ article {
 /* footer */
 
 footer {
+    width: 100%;
+
     background-color: var(--navy);
 
     display: flex;

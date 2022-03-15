@@ -724,6 +724,8 @@ button {
 /* footer-section */
 
 footer {
+    width: 100%;
+
     background-color: var(--navy);
 
     display: flex;

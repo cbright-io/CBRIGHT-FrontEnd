@@ -209,6 +209,8 @@ nav a:hover {
 /* footer */
 
 footer {
+    width: 100%;
+
     background-color: var(--navy);
 
     display: flex;
