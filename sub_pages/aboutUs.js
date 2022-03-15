@@ -1,4 +1,5 @@
 import Glide from "@glidejs/glide";
+console.log("hello");
 
 window.addEventListener("load", () => {
     const glide = new Glide(".glide", {
