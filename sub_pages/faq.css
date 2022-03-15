@@ -185,7 +185,7 @@ section {
 footer {
     margin-top: 10rem;
 
-    background-color: var(--turquoise-blue);
+    background-color: var(--navy);
 
     display: flex;
     flex-direction: column;
@@ -245,13 +245,4 @@ footer img {
 #logos img:nth-last-of-type(1) {
     height: 75px;
     width: 75px;
-}
-
-#band {
-    background-color: var(--turquoise-green);
-
-    margin-top: 3rem;
-
-    height: 60px;
-    width: 100vw;
 }
