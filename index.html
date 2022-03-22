@@ -17,8 +17,26 @@
             rel="stylesheet"
         />
 
-        <link rel="stylesheet" href="index.css" />
-        <script src="index.js" type="module" defer></script>
+        <link
+            rel="stylesheet"
+            href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+        />
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "@glidejs/glide": "./node_modules/@glidejs/glide/dist/glide.esm.js",
+                    "gsap": "./node_modules/gsap/index.js"
+                }
+            }
+        </script>
+
+        <link rel="stylesheet" href="./index.css" />
+        <script src="./index.js" type="module" defer></script>
 
         <title>HyBright</title>
     </head>
@@ -122,23 +140,74 @@
                 <h2>The right strategy for every day</h2>
                 <div id="strategy-anchor">
                     <div id="iphone-banner">
-                        <aside id="iphone">
-                            <img src="assets/iphone-removed.png" />
+                        <aside id="iphone-banner-aside">
+                            <img
+                                src="assets/iphone-removed.png"
+                                id="iphone-assets"
+                            />
+
+                            <div id="container">
+                                <div class="glide multi1" id="multi1">
+                                    <div
+                                        class="glide__track"
+                                        data-glide-el="track"
+                                    >
+                                        <ul class="glide__slides">
+                                            <li class="glide__slide">
+                                                <img
+                                                    src="./assets/markus.png"
+                                                    alt="1"
+                                                />
+                                            </li>
+                                            <li class="glide__slide">
+                                                <img
+                                                    src="./assets/markus.png"
+                                                    alt="2"
+                                                />
+                                            </li>
+                                            <li class="glide__slide">
+                                                <img
+                                                    src="./assets/markus.png"
+                                                    alt="3"
+                                                />
+                                            </li>
+                                            <li class="glide__slide">
+                                                <img
+                                                    src="./assets/markus.png"
+                                                    alt="4"
+                                                />
+                                            </li>
+                                            <li class="glide__slide">
+                                                <img
+                                                    src="./assets/markus.png"
+                                                    alt="5"
+                                                />
+                                            </li>
+                                            <li class="glide__slide">
+                                                <img
+                                                    src="./assets/markus.png"
+                                                    alt="6"
+                                                />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </aside>
 
-                        <aside id="iphone-text">
+                        <aside id="iphone-text-aside">
                             <ul>
-                                <li>
+                                <li class="text-list">
                                     <div class="list-style"></div>
                                     <p>The last Jedi was arguably one of the</p>
                                 </li>
-                                <li>
+                                <li class="text-list">
                                     <div class="list-style"></div>
                                     <p>
                                         Worst creative endeavors ever conceived
                                     </p>
                                 </li>
-                                <li>
+                                <li class="text-list">
                                     <div class="list-style"></div>
                                     <p>
                                         May god have mercy on Ryan Jhonson's
@@ -146,7 +215,9 @@
                                     </p>
                                 </li>
                             </ul>
-                            <button>millennium falcon</button>
+                            <button id="iphone-banner-button">
+                                millennium falcon
+                            </button>
                         </aside>
                     </div>
                 </div>

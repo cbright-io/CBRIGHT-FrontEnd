@@ -62,19 +62,37 @@ nav a {
 /* main */
 
 main {
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
+    width: 60%;
+
     margin-top: 10rem;
 
-    width: 80vw;
+    display: none;
 }
 
 article {
     margin-top: 2rem;
 
     font-family: var(--ff-primary);
+
+    display: none;
+}
+
+p {
+    font-family: var(--ff-primary);
+
+    margin-top: 1rem;
+
+    display: none;
+}
+
+ul {
+    margin-left: 3rem;
 }
 
 /* footer */

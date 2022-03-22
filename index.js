@@ -1,21 +1,31 @@
-const root = document.documentElement;
+import Glide from "@glidejs/glide";
 
-ticker1();
+let vw;
+let cardsNo;
+resize();
 
-function ticker1() {
-    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
-        "--marquee-elements-displayed"
+var glideMulti1 = new Glide(".multi1", {
+    type: "carousel",
+    autoplay: 3500,
+    perView: cardsNo,
+});
+
+glideMulti1.mount();
+
+function resize() {
+    vw = Math.max(
+        document.documentElement.clientWidth || 0,
+        window.innerWidth || 0
     );
-    const marqueeContent = document.querySelector("ul.marquee-content");
 
-    root.style.setProperty(
-        "--marquee-elements",
-        marqueeContent.children.length
-    );
+    console.log(vw);
 
-    for (let i = 0; i < marqueeElementsDisplayed; i++) {
-        marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+    if (vw < 800) {
+        cardsNo = 5;
+    } else if (vw < 1300) {
+        cardsNo = 7;
+        console.log("switch");
+    } else {
+        cardsNo = 11;
     }
 }
-
-alert("This site is still in production!");

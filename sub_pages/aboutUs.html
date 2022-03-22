@@ -5,20 +5,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="icon" href="assets/logo-green-removed.png" />
+        <link rel="icon" href="../assets/logo-green-removed.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@1,500&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"
-        />
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "@glidejs/glide": "../node_modules/@glidejs/glide/dist/glide.esm.js"
+                }
+            }
+        </script>
 
         <link rel="stylesheet" href="aboutUs.css" />
-        <script src="aboutUs.js" type="module" defer></script>
+        <script src="./aboutUs.js" type="module" defer></script>
+
+        <link
+            rel="stylesheet"
+            href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+        />
 
         <title>HyBright | About us</title>
     </head>
@@ -60,7 +73,7 @@
             <section id="founders-section">
                 <aside>
                     <div>
-                        <img id="founders" src="../assets/founders.png" />
+                        <img id="founders" src="../assets/" />
                     </div>
                 </aside>
 
@@ -80,19 +93,37 @@
             <section id="team-section">
                 <h2>TEAM</h2>
 
-                <div id="container">
-                    <div class="glide">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide">0</li>
-                                <li class="glide__slide">1</li>
-                                <li class="glide__slide">2</li>
-                            </ul>
-                        </div>
-                        <div data-glide-el="controls">
-                            <button data-glide-dir="<<">Start</button>
-                            <button data-glide-dir=">>">End</button>
-                        </div>
+                <div class="glide multi1" id="multi1">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide" id="markus-li">
+                                <img src="../assets/markus.png" />
+                                <div class="text">
+                                    <h2>Markus</h2>
+                                    <article>
+                                        Lucas ipsum dolor sit amet grievous yoda
+                                        palpatine kenobi binks jabba palpatine
+                                        grievous tatooine tatooine. Mace moff
+                                        binks coruscant wampa ackbar secura
+                                        obi-wan mace.
+                                    </article>
+                                </div>
+                            </li>
+                            <li class="glide__slide" id="inbal-li">
+                                <img src="../assets/inbal.png" />
+                                <div class="text">
+                                    <h2>Inbal</h2>
+                                    <article>
+                                        Lucas ipsum dolor sit amet grievous yoda
+                                        palpatine kenobi binks jabba palpatine
+                                        grievous tatooine tatooine. Mace moff
+                                        binks coruscant wampa ackbar secura
+                                        obi-wan mace.
+                                    </article>
+                                </div>
+                            </li>
+                            <li class="glide__slide">3</li>
+                        </ul>
                     </div>
                 </div>
             </section>

@@ -4,13 +4,11 @@
     "gsap": "^3.9.1",
     "handlebars": "^4.7.7",
     "install": "^0.13.0",
-    "npm": "^8.5.2",
-    "scrollmagic": "^2.0.8"
+    "npm": "^8.5.2"
   },
   "name": "hybright",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

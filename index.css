@@ -414,72 +414,22 @@ button {
 }
 
 /* strategie-seciton */
-
 #strategy-section {
-    height: 90vh;
-    width: 100vw;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-top: 10rem;
-}
-
-#strategy-section h2 {
-    font-size: 45px;
-}
-
-#strategy-anchor {
-    width: 100%;
-    height: 100vh;
-    margin-top: 15rem;
-    position: relative;
 }
 
 #iphone-banner {
-    width: 80%;
-
-    position: absolute;
-
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-
-    margin-top: 5rem;
-    z-index: 1;
-}
-
-#iphone {
-    position: absolute;
-    top: 3rem;
-    left: 0px;
-}
-#iphone img {
-    height: 700px;
-    width: 300px;
-}
-
-#iphone-text {
-    position: absolute;
-    right: -40px;
-    top: -230px;
-}
-
-#iphone-banner aside {
-    width: 50%;
-    height: 100%;
-    margin: 0px 5rem;
-}
-
-#iphone-banner aside:nth-child(1) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+
+    width: 100vw;
+    padding: 20px;
 }
 
-#iphone-banner li {
+#iphone-banner .text-list {
     list-style: none;
 
     display: flex;
@@ -489,112 +439,91 @@ button {
     margin-top: 1rem;
 }
 
-#iphone-banner li div {
+#iphone-banner .text-list div {
     margin-right: 1rem;
 }
 
-#iphone-banner li p {
-    font-family: var(--ff-accent);
-    font-weight: 100;
-
-    width: 15rem;
-}
-
-.list-style {
-    background-color: var(--purple);
-
-    height: 50px;
-    width: 50px;
-
-    border-radius: 30px;
-}
-
-#iphone-banner button {
+#iphone-banner-button {
     background-color: var(--purple);
     color: #fff;
     font-family: var(--ff-accent);
     font-size: 25px;
     font-weight: 700;
 
-    height: 6rem;
+    height: 4rem;
     width: 25rem;
 
     border: none;
     border-radius: 0px 25px 25px 25px;
-    border: none;
 
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
-.marquee-strategy {
-    background-color: #fff;
-    color: #eee;
+.list-style {
+    background-color: var(--purple);
 
-    width: var(--marquee-width);
-    height: 15rem;
+    height: 30px;
+    width: 30px;
 
-    overflow: hidden;
-    position: absolute;
-    top: 230px;
+    border-radius: 30px;
 }
 
-.marquee-strategy:before,
-.marquee:after {
-    position: absolute;
-    top: 0;
-    width: 10rem;
-    height: 100%;
-    content: "";
-    z-index: 1;
+#iphone-banner .text-list p {
+    font-family: var(--ff-accent);
+    font-weight: 100;
+
+    width: 15rem;
 }
 
-.marquee-strategy:before {
-    left: 0;
-    background: linear-gradient(to right, #fff 0%, transparent 100%);
+/* glide setting stuff */
+
+#iphone-banner aside {
+    margin: 100px;
 }
 
-.marquee-strategy:after {
-    right: 0;
-    background: linear-gradient(to left, #fff 0%, transparent 100%);
+#iphone-banner-aside {
+    position: relative;
+
+    height: 548px;
+    width: 284px;
 }
 
-.marquee-strategy-content {
-    list-style: none;
-    height: 100%;
-    display: flex;
-}
-
-.marquee-strategy-content li {
-    background-color: rgb(141, 52, 52);
-
+#container {
+    width: 200vw;
     height: 150px;
-    width: 150px;
 
-    margin: 0px 60px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 
-    border-radius: 20px;
+    top: 360px;
+}
+
+.glide {
+    background-color: transparent;
+}
+
+.glide__slides {
+    width: 500px;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    flex-shrink: 0;
 }
 
-.marquee-strategy-content li img {
-    width: 100%;
-    /* height: 100%; */
-    border: 2px solid #eee;
+.glide__slide {
+    display: flex;
+    justify-content: center;
 }
 
-.glide__arrow {
-    position: absolute;
-    display: block;
-    top: 50%;
-    z-index: 2;
-    opacity: 1;
-    transform: translateY(-50%);
+.glide__slide img {
+    height: 150px;
+    width: 150px;
+
+    border-radius: 10px;
+
+    background-color: rgb(138, 126, 126);
 }
+
 /* steps section */
 
 #steps-section {
@@ -858,6 +787,11 @@ footer img {
         width: 200px;
 
         object-fit: cover;
+    }
+
+    #iphone-banner {
+        flex-direction: column;
+        align-items: center;
     }
 
     .steps aside {
