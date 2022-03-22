@@ -1,4 +1,4 @@
-import Glide from "./node_modules/@amcharts/amcharts4/maps";
+// import Glide from "./node_modules/@amcharts/amcharts4/maps";
 
 console.log("check ");
 
@@ -8,13 +8,13 @@ resize();
 
 Window.alert("Site under development");
 
-var glideMulti1 = new Glide(".multi1", {
-    type: "carousel",
-    autoplay: 3500,
-    perView: 7,
-});
+// var glideMulti1 = new Glide(".multi1", {
+//     type: "carousel",
+//     autoplay: 3500,
+//     perView: 7,
+// });
 
-glideMulti1.mount();
+// glideMulti1.mount();
 
 function resize() {
     vw = Math.max(
