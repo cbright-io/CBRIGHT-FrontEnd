@@ -1,5 +1,7 @@
 import Glide from "./node_modules/@amcharts/amcharts4/maps";
 
+console.log("check ");
+
 let vw;
 let cardsNo;
 resize();
