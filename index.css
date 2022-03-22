@@ -488,6 +488,10 @@ button {
     width: 284px;
 }
 
+#iphone-assets {
+    z-index: 1000;
+}
+
 #container {
     width: 200vw;
     height: 150px;
