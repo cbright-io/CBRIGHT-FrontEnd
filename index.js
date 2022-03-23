@@ -6,7 +6,7 @@ let vw;
 let cardsNo;
 resize();
 
-Window.alert("Site under development");
+alert("Site under development");
 
 // var glideMulti1 = new Glide(".multi1", {
 //     type: "carousel",
