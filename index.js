@@ -1,7 +1,5 @@
 // import Glide from "./node_modules/@amcharts/amcharts4/maps";
 
-console.log("check ");
-
 let vw;
 let cardsNo;
 resize();
@@ -21,9 +19,6 @@ function resize() {
         document.documentElement.clientWidth || 0,
         window.innerWidth || 0
     );
-
-    console.log(vw);
-
     if (vw < 800) {
         cardsNo = 5;
     } else if (vw < 1300) {
