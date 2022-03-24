@@ -1,4 +1,4 @@
-import Glide from "./node_modules/@amcharts/amcharts4/maps";
+import Glide from "./HyBright/node_modules/@amcharts/amcharts4/maps";
 
 let vw;
 let cardsNo;
