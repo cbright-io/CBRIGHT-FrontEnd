@@ -1,4 +1,4 @@
-import Glide from "@glidejs/glide";
+import Glide from "./node_modules/@glidejs/glide/dist/glide.esm.js";
 
 let vw;
 let cardsNo;
