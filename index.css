@@ -34,9 +34,8 @@ h6 {
 
 nav {
     background-color: white;
-
+    width: min-content;
     height: min-content;
-    width: 60vh;
 
     border-radius: 55px;
 
@@ -724,13 +723,13 @@ footer img {
 }
 
 @media screen and (max-width: 1200px) {
-    nav {
-        display: none;
+    #catchphrase {
+        margin-top: 10rem;
     }
-
     #landing-section img {
         display: none;
     }
+
     #landing-section aside {
         background-image: url(assets/landing-page-image.jpg);
         background-size: cover;
@@ -840,20 +839,18 @@ footer img {
     }
 }
 
+@media screen and (max-width: 800px) {
+    nav a {
+        width: 23vw;
+
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     h2 {
         text-align: center;
     }
-
-    main section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* #landing-section {
-        padding-bottom: 1rem;
-    } */
 
     #landing-section button {
         margin-top: 3rem;
