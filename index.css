@@ -882,6 +882,10 @@ footer img {
         display: none;
     }
 
+    #iphone-banner-aside {
+        display: none;
+    }
+
     #iphone-text {
         position: static;
         width: 100%;
