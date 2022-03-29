@@ -563,8 +563,8 @@ main {
 }
 
 .glide__slide img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
 
     border-radius: 30px;
 
@@ -581,6 +581,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#steps-section-header {
+    text-align: center;
 }
 
 .steps {
@@ -604,21 +608,28 @@ main {
 }
 
 #steps-section h2 {
-    font-size: 35px;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 #steps-section h3 {
     margin-top: 1rem;
     font-size: 30px;
+    font-weight: 900;
+}
+
+#steps-section img {
+    height: 900px;
 }
 
 #steps-section article {
     font-family: var(--ff-primary);
-    font-weight: 100;
+    font-size: 30px;
+    font-weight: 400;
 
-    margin-top: 2rem;
+    margin-top: 5rem;
 
-    width: 300px;
+    width: 400px;
 }
 
 .steps-button {
@@ -628,14 +639,14 @@ main {
     font-size: 25px;
     font-weight: 700;
 
-    height: 5rem;
-    width: 15rem;
+    height: 6rem;
+    width: 20rem;
 
     border: none;
     border-radius: 0px 25px 25px 25px;
     border: none;
 
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .steps:nth-of-type(2) aside:nth-of-type(1) div {
@@ -694,9 +705,8 @@ main {
 }
 
 #committees-section img {
-    margin: 0px 5rem;
-    height: 80%;
-    width: 50%;
+    height: 100%;
+    width: 60%;
 }
 
 /* footer-section */
