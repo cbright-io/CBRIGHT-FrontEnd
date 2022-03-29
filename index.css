@@ -62,6 +62,7 @@ nav a {
     font-size: 35px;
     color: #000;
     line-height: 100px;
+    font-weight: 500;
 
     text-decoration: none;
     text-align: center;
@@ -129,12 +130,8 @@ main {
     overflow-x: hidden;
 }
 
-button {
-    color: #000;
-}
-
 #landing-section {
-    height: 1100px;
+    height: min-content;
 
     display: flex;
     justify-content: flex-end;
@@ -148,6 +145,13 @@ button {
         13deg,
         rgba(44, 15, 85, 1) 0%,
         rgb(38, 29, 115) 100%
+    );
+
+    /* background: rgb(137, 51, 148); */
+    background: linear-gradient(
+        to top right,
+        rgb(42, 12, 82),
+        rgb(71, 25, 131)
     );
 }
 
@@ -164,17 +168,24 @@ button {
 
 #catchphrase {
     font-family: var(--ff-accent);
-    font-size: 65px;
+    font-size: 75px;
+    line-height: 60px;
 
     color: rgb(255, 255, 255);
 
     margin-top: 140px;
 }
 
-#landing-section button {
+#landing-section a {
     font-family: var(--ff-accent);
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 7rem;
+    text-decoration: none;
+    text-align: center;
+
+    background-color: white;
+    color: black;
 
     height: 7rem;
     width: 30rem;
@@ -182,7 +193,9 @@ button {
     border-radius: 0px 25px 25px 25px;
     border: none;
 
-    margin-top: 140px;
+    display: block;
+
+    margin-top: 120px;
 }
 
 #lading-section-image {
@@ -204,6 +217,14 @@ button {
     padding-top: 8rem;
 }
 
+#appstore-section h2 {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+
+    line-height: 60px;
+}
+
 #appstore-section article {
     font-family: var(--ff-primary);
     font-size: 5rem;
@@ -214,24 +235,23 @@ button {
 #scroll-magic {
     background-color: black;
 
-    height: 600px;
-    width: 65%;
+    height: 800px;
+    width: 75%;
 
-    margin-top: 8rem;
-    border-radius: 0px 25px 25px 25px;
+    margin-top: 15rem;
+    border-radius: 0px 50px 50px 50px;
 
     position: relative;
 }
 
 #iphone-bank {
-    height: 42rem;
-    width: 20rem;
+    height: 1100px;
 
     object-fit: cover;
 
     position: absolute;
 
-    top: -2rem;
+    top: -5.5rem;
 
     left: 0;
     right: 0;
@@ -247,7 +267,7 @@ button {
 
     border-radius: 15px;
 
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 #message-1 {
@@ -308,11 +328,13 @@ button {
     flex-direction: column;
     align-items: center;
 
-    margin-top: 7rem;
+    margin-top: 15rem;
 }
 
 #partners-section h3 {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 900;
+
     margin-bottom: 5rem;
 }
 
@@ -359,6 +381,7 @@ button {
         );
     }
 }
+
 .marquee-content li {
     display: flex;
     justify-content: center;
@@ -408,22 +431,32 @@ button {
 
 #founders-section article {
     font-family: var(--ff-primary);
-    font-size: 20px;
+    font-size: 55px;
+    font-weight: 650;
 
     margin-top: 1.7rem;
 }
 
 /* strategie-seciton */
 #strategy-section {
+    height: 1500px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#strategy-section h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
 #iphone-banner {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+
+    margin-top: 200px;
 
     width: 100vw;
     padding: 20px;
@@ -448,9 +481,9 @@ button {
     color: #fff;
     font-family: var(--ff-accent);
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 900;
 
-    height: 4rem;
+    height: 7rem;
     width: 25rem;
 
     border: none;
@@ -462,10 +495,12 @@ button {
 .list-style {
     background-color: var(--purple);
 
-    height: 30px;
-    width: 30px;
+    height: 80px;
+    width: 80px;
 
-    border-radius: 30px;
+    border-radius: 40px;
+
+    margin-bottom: 50px;
 }
 
 #iphone-banner .text-list p {
@@ -473,22 +508,32 @@ button {
     font-weight: 100;
 
     width: 15rem;
+    height: 80;
+
+    display: block;
 }
 
 /* glide setting stuff */
 
-#iphone-banner aside {
-    margin: 100px;
-}
-
 #iphone-banner-aside {
     position: relative;
 
-    height: 548px;
-    width: 284px;
+    margin: 0px 20px;
+
+    height: 1200px;
+    width: 800px;
+}
+
+#iphone-text-aside {
+    width: 800px;
 }
 
 #iphone-assets {
+    height: 1200px;
+    width: 800px;
+
+    position: absolute;
+
     z-index: 1000;
 }
 
@@ -500,7 +545,7 @@ button {
     left: 50%;
     transform: translate(-50%);
 
-    top: 360px;
+    top: 700px;
 }
 
 .glide {
@@ -518,10 +563,10 @@ button {
 }
 
 .glide__slide img {
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
 
-    border-radius: 10px;
+    border-radius: 30px;
 
     background-color: rgb(138, 126, 126);
 }
@@ -531,7 +576,7 @@ button {
 #steps-section {
     width: 100vw;
 
-    margin-top: 10rem;
+    padding: 10rem;
 
     display: flex;
     flex-direction: column;

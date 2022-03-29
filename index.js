@@ -7,7 +7,7 @@ resize();
 var glideMulti1 = new Glide(".multi1", {
     type: "carousel",
     autoplay: 3500,
-    perView: 7,
+    perView: 9,
 });
 
 glideMulti1.mount();

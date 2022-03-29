@@ -128,7 +128,7 @@ main {
 }
 
 #landing-section {
-    height: 110vh;
+    height: 900px;
 
     display: flex;
     justify-content: flex-end;
@@ -368,4 +368,51 @@ footer img {
 #logos img:nth-last-of-type(1) {
     height: 75px;
     width: 75px;
+}
+
+@media screen and (max-width: 1200px) {
+    #landing-section aside {
+        height: min-content;
+    }
+
+    #landing-section-logo {
+        display: none;
+    }
+
+    #catchphrase {
+        margin-top: 18rem;
+    }
+
+    #landing-section img {
+        display: none;
+    }
+
+    #landing-section aside {
+        background-image: url(../assets/corprate.jpg);
+        background-size: cover;
+
+        width: 100vw;
+    }
+
+    #nav-footer {
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav-footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
