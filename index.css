@@ -87,9 +87,9 @@ nav a:hover {
 /* landing section */
 
 main {
-    width: 110vw;
+    width: 100vw;
 
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #landing-section {
@@ -100,8 +100,11 @@ main {
     align-items: center;
 
     position: relative;
+    padding-bottom: 70vw;
+}
 
-    padding-bottom: 60vw;
+#water-background {
+    width: 100vw;
 }
 
 #catchphrase {
@@ -118,19 +121,12 @@ main {
 
 #water-splash {
     position: absolute;
-    top: 35vw;
-    left: 10vw;
-}
+    width: 90vw;
 
-#landing-section-image {
-    height: 100%;
-    width: 50vw;
+    top: 30vw;
+    left: 12vw;
 
-    z-index: 3;
-
-    object-fit: cover;
-    position: absolute;
-    top: 20vw;
+    z-index: 2;
 }
 
 #iphone-landing-page {
@@ -138,6 +134,8 @@ main {
 
     position: absolute;
     top: 30vw;
+
+    z-index: 4;
 }
 
 #download-links {
@@ -145,7 +143,7 @@ main {
     flex-direction: row;
 
     position: absolute;
-    top: 110vw;
+    top: 95vw;
 }
 
 .download-links {
@@ -173,7 +171,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    margin-top: 15vw;
+    margin-top: 3vw;
 }
 
 #partners-section h3 {
@@ -309,7 +307,7 @@ main {
     width: 40vw;
 }
 
-#strategy-section h2 {
+#strategy-section-h2 {
     font-size: 2.5vw;
     line-height: 1.8vw;
     font-weight: 600;
@@ -404,13 +402,63 @@ main {
     justify-content: center;
 }
 
-.glide__slide img {
+.glide__slide-img {
     height: 15vw;
     width: 15vw;
 
     border-radius: 2vw;
 
     background-color: rgb(138, 126, 126);
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+
+    height: 15vw;
+    width: 15vw;
+
+    padding: 0.2vw;
+
+    border-radius: 2vw;
+}
+
+.icon {
+    height: 5vw;
+    width: 5vw;
+}
+
+.bike-icon {
+    background-color: white;
+
+    width: min-content;
+    border-radius: 100%;
+}
+
+.bike {
+    height: 4vw;
+    width: 4vw;
+}
+
+.tasks h2 {
+    margin-top: 4vw;
+    font-size: 2vw;
+    line-height: 1.8vw;
+    text-align: center;
+}
+
+#task1 {
+    background-color: rgb(22, 24, 44);
+}
+
+#task2 {
+    background-color: rgb(8, 185, 186);
+}
+
+#task3 {
+    background-color: rgb(86, 172, 136);
 }
 
 /* steps section */
@@ -496,13 +544,26 @@ main {
 footer {
     width: 100%;
 
-    background-color: var(--navy);
+    background-color: rgb(187, 208, 227);
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
-    padding: 2rem;
+#socials {
+    width: 100%;
+    padding: 2vw 10vw;
+
+    background-color: var(--navy);
+}
+
+#socials-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
 }
 
 #nav-footer {
@@ -512,7 +573,7 @@ footer {
     justify-content: space-evenly;
 }
 
-footer ul {
+.footer-ul {
     margin-top: 4rem;
     list-style: none;
 }

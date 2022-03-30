@@ -32,92 +32,56 @@ h6 {
 
 /* nav */
 nav {
+    position: fixed;
+
     background-color: white;
 
-    height: min-content;
-    width: 60vh;
+    padding: 2vw;
 
-    border-radius: 55px;
+    height: 8vw;
+    width: 100%;
+    z-index: 100;
 
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 2px 1fr 2px 1fr;
-    gap: 0px 0px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+
+    border-bottom: 2px solid black;
 }
 
 nav a {
-    font-family: var(--ff-accent);
-    font-size: 35px;
-    color: #000;
-    line-height: 100px;
+    color: black;
 
+    font-family: var(--ff-primary);
+    font-size: 2.5vw;
+    font-weight: 900;
     text-decoration: none;
-    text-align: center;
-
-    height: 100px;
-    width: 250px;
-
-    background-color: white;
-
-    border: none;
-    transition: ease-in-out 1.1s;
-}
-
-nav sup {
-    font-size: 1.5rem;
 }
 
 nav a:hover {
-    transform: scale(105%);
-
-    color: rgb(34, 34, 34);
+    color: rgb(91, 239, 178);
 }
 
-.grid-div {
-    height: 60%;
-    border: 1px solid black;
+.app-download {
+    display: block;
+
+    background-color: rgb(91, 239, 178);
+    color: white;
+
+    padding: 1.1vw 1.5vw;
+
+    border-radius: 0px 0.5vw 0.5vw 0.5vw;
+    box-shadow: 0.2vw 0.2vw 0.1vw 0.1vw rgba(91, 239, 178, 0.3);
+
+    font-family: var(--ff-accent);
+    font-weight: 400;
+    font-size: 1.5vw;
 }
 
-.grid-button {
-    display: flex;
-    align-items: center;
-}
-
-#nav-left {
-    grid-area: 1 / 1 / 2 / 2;
-    border-top-left-radius: 55px;
-    border-bottom-left-radius: 55px;
-}
-
-#grid-div-left {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-#nav-center {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-#grid-div-right {
-    grid-area: 1 / 4 / 2 / 5;
-}
-
-#nav-right {
-    grid-area: 1 / 5 / 2 / 6;
-    border-top-right-radius: 55px;
-    border-bottom-right-radius: 55px;
-
-    line-height: 85px;
+.app-download:hover {
+    color: black;
+    box-shadow: 0.2vw 0.2vw 0.1vw 0.1vw rgba(19, 53, 39, 0.3);
 }
 
 /* main */
@@ -127,14 +91,17 @@ main {
 
     padding-top: 20rem;
 
-    background-image: url(../assets/contact.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#contianer {
+    border: solid 0.2vw var(--turquoise-green);
+    border-radius: 0.5vw;
+
+    padding: 1vw;
 }
 
 h2 {
@@ -144,7 +111,7 @@ h2 {
 
     text-align: center;
 
-    color: rgba(255, 255, 255, 0.8);
+    color: black;
 }
 
 strong {
@@ -155,7 +122,7 @@ form {
     padding: 5rem;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -164,42 +131,42 @@ label {
     font-family: var(--ff-primary);
     font-size: 50px;
 
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 input {
-    width: 40vw;
-    height: 3rem;
+    width: 30vw;
+    height: 5vw;
 
     font-family: var(--ff-primary);
     font-size: 30px;
     text-align: center;
-    color: white;
+    color: black;
 
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid rgba(158, 158, 158, 0.8);
 
-    border-radius: 6px;
+    border-radius: 1vw;
 }
 
 input::placeholder {
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 button {
-    height: 5rem;
-    width: 30vw;
+    height: 5vw;
+    width: 10vw;
+
+    margin-left: 1vw;
 
     font-family: var(--ff-primary);
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: black;
 
     background-color: transparent;
 
     border: 2px solid rgba(158, 158, 158, 0.8);
-    border-radius: 20px;
-
-    margin-top: 3rem;
+    border-radius: 1vw;
 
     transition: ease-in-out 1s;
 }
@@ -209,18 +176,31 @@ button:hover {
     background-color: rgba(190, 190, 190, 0.8);
 }
 
-/* footer */
+/* footer-section */
 
 footer {
     width: 100%;
 
-    background-color: var(--navy);
+    background-color: rgb(187, 208, 227);
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
-    padding: 2rem;
+#socials {
+    width: 100%;
+    padding: 2vw 10vw;
+
+    background-color: var(--navy);
+}
+
+#socials-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
 }
 
 #nav-footer {
@@ -230,8 +210,9 @@ footer {
     justify-content: space-evenly;
 }
 
-footer ul {
-    margin-top: 4rem;
+.footer-ul {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
     list-style: none;
 }
 
@@ -243,7 +224,7 @@ footer li a {
     color: white;
 
     font-family: var(--ff-accent);
-    font-size: 30px;
+    font-size: 2vw;
 
     text-decoration: none;
 }
@@ -254,10 +235,8 @@ footer h2 {
 }
 
 footer img {
-    fill: red;
-
-    height: 80px;
-    width: 80px;
+    height: 5vw;
+    width: 5vw;
 }
 
 #logos {
