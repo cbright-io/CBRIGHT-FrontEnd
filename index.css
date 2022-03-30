@@ -109,7 +109,7 @@ main {
 
     font-family: var(--ff-accent);
     font-size: 4vw;
-    line-height: 3vw;
+    line-height: 3.6vw;
     text-align: center;
 
     color: white;
@@ -244,7 +244,7 @@ main {
     height: 4vw;
     object-fit: contain;
 
-    filter: grayscale(1);
+    /* filter: grayscale(1); */
 }
 
 /* founders */
