@@ -1,0 +1,995 @@
+:root {
+    --ff-primary: "Barlow", sans-serif;
+    --ff-accent: "Roboto Mono", monospace;
+
+    --marquee-width: 100vw;
+    --marquee-height: 12vh;
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(
+        var(--marquee-width) / var(--marquee-elements-displayed)
+    );
+    --marquee-animation-duration: 50s;
+
+    --purple: rgb(74, 37, 125);
+    --navy: rgb(22, 24, 44);
+    --turquoise-green: rgb(91, 239, 178);
+    --turquoise-blue: rgb(10, 185, 186);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-accent);
+}
+
+/* nav section */
+
+nav {
+    position: fixed;
+
+    background-color: white;
+
+    padding: 2vw;
+
+    height: 8vw;
+    width: 100%;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+
+    font-family: var(--ff-accent);
+    font-size: 2.5vw;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(91, 239, 178);
+}
+
+.app-download {
+    display: block;
+
+    background-color: rgb(91, 239, 178);
+    color: white;
+
+    padding: 1.1vw 1.5vw;
+
+    border-radius: 0px 0.5vw 0.5vw 0.5vw;
+    box-shadow: 0.2vw 0.2vw 0.1vw 0.1vw rgba(91, 239, 178, 0.3);
+
+    font-family: var(--ff-accent);
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+
+.app-download:hover {
+    color: black;
+    box-shadow: 0.2vw 0.2vw 0.1vw 0.1vw rgba(19, 53, 39, 0.3);
+}
+
+/* landing section */
+
+main {
+    width: 100vw;
+
+    overflow-x: hidden;
+}
+
+#landing-section {
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    padding-bottom: 50vw;
+}
+
+#catchphrase {
+    position: absolute;
+
+    font-family: var(--ff-accent);
+    font-size: 4vw;
+    line-height: 3vw;
+    text-align: center;
+
+    color: white;
+    top: 25vw;
+}
+
+#water-splash {
+    position: absolute;
+    top: 40vw;
+    left: 10vw;
+}
+
+#lading-section-image {
+    height: 100%;
+    width: 50vw;
+
+    z-index: 3;
+
+    object-fit: cover;
+}
+
+#iphone-landing-page {
+    height: 60vw;
+
+    position: absolute;
+    top: 35vw;
+}
+
+#download-links {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    top: 100vw;
+}
+
+.download-links {
+    height: 5vw;
+    width: 15vw;
+
+    margin: 0px 0.5vw;
+}
+
+#landing-section-download-link {
+    height: 5vw;
+
+    line-height: 5vw;
+    font-size: 1.8vw;
+    text-align: center;
+
+    padding: 0vw 0vw;
+}
+
+/* partners  section */
+#partners-section {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 10vw;
+}
+
+#partners-section h3 {
+    font-size: 1.8vw;
+    font-weight: 600;
+
+    margin-bottom: 3vw;
+}
+
+.marquee {
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee:before,
+.marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+.marquee:before {
+    left: 0;
+    background: linear-gradient(to right, #fff 0%, transparent 100%);
+}
+.marquee:after {
+    right: 0;
+    background: linear-gradient(to left, #fff 0%, transparent 100%);
+}
+.marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(
+            calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+        );
+    }
+}
+
+.marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
+    white-space: nowrap;
+
+    margin-right: max(140px, 3rem);
+}
+
+.marquee-content li img {
+    width: 15vw;
+    height: 4vw;
+    object-fit: contain;
+
+    filter: grayscale(1);
+}
+
+/* founders */
+
+#appstore-section h2 {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+
+    line-height: 60px;
+}
+
+#appstore-section article {
+    font-family: var(--ff-primary);
+    font-size: 5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+#scroll-magic {
+    background-color: black;
+
+    height: 55vw;
+    width: 75vw;
+
+    margin-top: 15vw;
+    border-radius: 0px 3vw 3vw 3vw;
+
+    position: relative;
+}
+
+#iphone-bank {
+    height: 70vw;
+
+    object-fit: cover;
+
+    position: absolute;
+
+    top: -7vw;
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#scroll-magic div {
+    font-family: var(--ff-primary);
+    font-size: 1.5vw;
+
+    background-color: rgb(6, 198, 67);
+    color: white;
+
+    height: min-content;
+    width: 15vw;
+
+    padding: 5px;
+
+    border-radius: 1vw;
+
+    /* visibility: hidden; */
+}
+
+#message-1 {
+    position: absolute;
+    top: 4vw;
+    left: 3vw;
+}
+
+#message-2 {
+    position: absolute;
+    top: 25vw;
+    right: 3vw;
+}
+
+#message-3 {
+    position: absolute;
+    bottom: 4vw;
+    left: 3vw;
+}
+
+#scroll-magic div.show {
+    visibility: visible;
+}
+
+#download-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 13rem;
+    padding: 5px;
+}
+
+.download-button {
+    height: 100px;
+    width: 300px;
+
+    margin: 0px 20px;
+
+    border: none;
+}
+
+#google-play {
+    background: url(assets/google-play.png);
+    background-size: cover;
+}
+
+#app-store {
+    background: url(assets/app-store.png);
+    background-size: cover;
+}
+
+#founders-section {
+    padding: 8rem 7rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#founders {
+    height: 30rem;
+    width: 45rem;
+}
+
+#founders-section aside {
+    width: 50%;
+}
+
+#founders-section aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#founders-section h3 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#founders-section article {
+    font-family: var(--ff-primary);
+    font-size: 55px;
+    font-weight: 650;
+
+    margin-top: 1.7rem;
+}
+
+#founders-section img {
+    width: 40vw;
+    height: 25vw;
+}
+
+/* strategie-seciton */
+#strategy-section {
+    height: 1500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#strategy-section h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#iphone-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin-top: 200px;
+
+    width: 100vw;
+    padding: 20px;
+}
+
+#iphone-banner .text-list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+#iphone-banner .text-list div {
+    margin-right: 1rem;
+}
+
+#iphone-banner-button {
+    background-color: var(--purple);
+    color: #fff;
+    font-family: var(--ff-accent);
+    font-size: 25px;
+    font-weight: 900;
+
+    height: 7rem;
+    width: 25rem;
+
+    border: none;
+    border-radius: 0px 25px 25px 25px;
+
+    margin-top: 2rem;
+}
+
+.list-style {
+    background-color: var(--purple);
+
+    height: 80px;
+    width: 80px;
+
+    border-radius: 40px;
+
+    margin-bottom: 50px;
+}
+
+#iphone-banner .text-list p {
+    font-family: var(--ff-accent);
+    font-weight: 100;
+
+    width: 15rem;
+    height: 80;
+
+    display: block;
+}
+
+/* glide setting stuff */
+
+#iphone-banner-aside {
+    position: relative;
+
+    margin: 0px 20px;
+
+    height: 1200px;
+    width: 800px;
+}
+
+#iphone-text-aside {
+    width: 800px;
+}
+
+#iphone-assets {
+    height: 1200px;
+    width: 800px;
+
+    position: absolute;
+
+    z-index: 1000;
+}
+
+#container {
+    width: 200vw;
+    height: 150px;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    top: 700px;
+}
+
+.glide {
+    background-color: transparent;
+}
+
+.glide__slides {
+    display: flex;
+    justify-content: center;
+}
+
+.glide__slide {
+    display: flex;
+    justify-content: center;
+}
+
+.glide__slide img {
+    height: 250px;
+    width: 250px;
+
+    border-radius: 30px;
+
+    background-color: rgb(138, 126, 126);
+}
+
+/* steps section */
+
+#steps-section {
+    width: 100vw;
+
+    padding: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#steps-section-header {
+    text-align: center;
+}
+
+.steps {
+    width: 60%;
+
+    margin-top: 10rem;
+
+    display: flex;
+}
+
+.steps aside {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps aside div {
+    padding-left: 10em;
+}
+
+#steps-section h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#steps-section h3 {
+    margin-top: 1rem;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#steps-section img {
+    height: 900px;
+}
+
+#steps-section article {
+    font-family: var(--ff-primary);
+    font-size: 30px;
+    font-weight: 400;
+
+    margin-top: 5rem;
+
+    width: 400px;
+}
+
+.steps-button {
+    background-color: rgba(65, 29, 115, 1);
+    color: #fff;
+    font-family: var(--ff-accent);
+    font-size: 25px;
+    font-weight: 700;
+
+    height: 6rem;
+    width: 20rem;
+
+    border: none;
+    border-radius: 0px 25px 25px 25px;
+    border: none;
+
+    margin-top: 5rem;
+}
+
+.steps:nth-of-type(2) aside:nth-of-type(1) div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding-left: 0;
+    padding-right: 10rem;
+}
+
+.steps:nth-of-type(2) aside:nth-of-type(1) h3 {
+    text-align: right;
+}
+
+.steps:nth-of-type(2) aside:nth-of-type(1) article {
+    text-align: right;
+}
+
+/* thousand lights */
+
+#thousand-lights-section {
+    height: 70vh;
+    width: 100vw;
+    margin-top: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    display: none;
+}
+
+#thousand-lights-section h2 {
+    font-size: 60px;
+}
+
+#thousand-lights-section div {
+    height: 50vh;
+}
+
+/* sponsors-section */
+
+#sponsors-section {
+    display: none;
+}
+
+/* committees-section */
+#committees-section {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#committees-section img {
+    height: 100%;
+    width: 60%;
+}
+
+/* footer-section */
+
+footer {
+    width: 100%;
+
+    background-color: var(--navy);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+#nav-footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer ul {
+    margin-top: 4rem;
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer li a {
+    color: white;
+
+    font-family: var(--ff-accent);
+    font-size: 30px;
+
+    text-decoration: none;
+}
+
+footer h2 {
+    font-size: 30px;
+    color: rgb(158, 158, 158);
+}
+
+footer img {
+    height: 80px;
+    width: 80px;
+}
+
+#logos {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logos img {
+    height: 100px;
+    width: 50px;
+
+    object-fit: cover;
+}
+
+#logos img:nth-last-of-type(1) {
+    height: 75px;
+    width: 75px;
+}
+
+/* @media screen and (max-width: 1600px) {
+    #founders-section article {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #catchphrase {
+        margin-top: 12rem;
+    }
+
+    #landing-section img {
+        display: none;
+    }
+
+    #landing-section aside {
+        background-image: url(assets/landing-page-image.jpg);
+        background-size: cover;
+
+        width: 100vw;
+    }
+
+    #landing-section button {
+        font-size: 2rem;
+
+        margin-top: 50px;
+    }
+
+    #founders-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #landing-section aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #appstore-section {
+        padding-top: 3rem;
+    }
+
+    #appstore-section h2 {
+        font-size: 3rem;
+    }
+
+    #download-options {
+        margin-top: 5rem;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #download-options button {
+        height: 75px;
+        width: 200px;
+
+        object-fit: cover;
+    }
+
+    #iphone-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps aside {
+        margin: 1rem;
+        padding: 0px;
+        align-items: center;
+        width: 80%;
+    }
+
+    .steps aside div {
+        padding-left: 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps aside article {
+        font-family: var(--ff-primary);
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #steps-section article {
+        font-family: var(--ff-primary);
+        width: 100%;
+    }
+
+    .steps:nth-of-type(2) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .steps:nth-of-type(2) aside:nth-of-type(1) div {
+        padding-right: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps:nth-of-type(2) aside:nth-of-type(1) article {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav a {
+        width: 23vw;
+
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        text-align: center;
+    }
+
+    #landing-section button {
+        margin-top: 3rem;
+
+        width: 20rem;
+        height: 5rem;
+    }
+
+    #nav-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #committees-section div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #committees-section img {
+        margin: 0px;
+        margin-right: 0px;
+    }
+    #founders-section {
+        display: none;
+    }
+
+    #iphone img {
+        display: none;
+    }
+
+    #iphone-banner-aside {
+        display: none;
+    }
+
+    #iphone-text {
+        position: static;
+        width: 100%;
+    }
+
+    #strategy-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #strategy-section h2 {
+        text-align: center;
+
+        margin-top: 2rem;
+    }
+
+    #strategy-section {
+        margin-top: 1rem;
+    }
+
+    #strategy-anchor {
+        position: static;
+
+        margin-top: 0;
+    }
+
+    .list-style {
+        height: 25px;
+    }
+
+    #iphone-banner {
+        position: static;
+    }
+
+    #iphone-banner aside {
+        margin: 0px;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    #iphone-text {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #iphone-text button {
+        width: 15rem;
+        height: 5rem;
+    }
+
+    #steps-section {
+        margin-top: 15rem;
+    }
+
+    #steps-section h2 {
+        text-align: center;
+    }
+
+    .steps:nth-of-type(2) aside:nth-of-type(1) h3 {
+        align-items: center;
+    }
+
+    #strategy-section {
+        text-emphasis: center;
+    }
+
+    #nav-footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #partners-section {
+        display: none;
+    }
+
+    .steps:nth-of-type(2) aside:nth-of-type(1) article,
+    h3 {
+        text-align: center;
+    }
+
+    footer li a {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav-footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} */

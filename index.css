@@ -34,92 +34,54 @@ h6 {
 /* nav section */
 
 nav {
+    position: fixed;
+
     background-color: white;
-    width: min-content;
-    height: min-content;
 
-    border-radius: 55px;
+    padding: 2vw;
 
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    height: 8vw;
+    width: 100%;
+    z-index: 3;
 
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 2px 1fr 2px 1fr;
-    gap: 0px 0px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
 }
 
 nav a {
+    color: black;
+
     font-family: var(--ff-accent);
-    font-size: 35px;
-    color: #000;
-    line-height: 100px;
-    font-weight: 500;
-
+    font-size: 2.5vw;
+    font-weight: 900;
     text-decoration: none;
-    text-align: center;
-
-    height: 100px;
-    width: 250px;
-
-    background-color: white;
-
-    border: none;
-    transition: ease-in-out 1.1s;
-}
-
-nav sup {
-    font-size: 1.5rem;
 }
 
 nav a:hover {
-    transform: scale(105%);
-
-    color: rgb(34, 34, 34);
+    color: rgb(91, 239, 178);
 }
 
-.grid-div {
-    height: 60%;
-    border: 1px solid black;
+.app-download {
+    display: block;
+
+    background-color: rgb(91, 239, 178);
+    color: white;
+
+    padding: 1.1vw 1.5vw;
+
+    border-radius: 0px 0.5vw 0.5vw 0.5vw;
+    box-shadow: 0.2vw 0.2vw 0.1vw 0.1vw rgba(91, 239, 178, 0.3);
+
+    font-family: var(--ff-accent);
+    font-weight: 400;
+    font-size: 1.5vw;
 }
 
-.grid-button {
-    display: flex;
-    align-items: center;
-}
-
-#nav-left {
-    grid-area: 1 / 1 / 2 / 2;
-    border-top-left-radius: 55px;
-    border-bottom-left-radius: 55px;
-}
-
-#grid-div-left {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-#nav-center {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-#grid-div-right {
-    grid-area: 1 / 4 / 2 / 5;
-}
-
-#nav-right {
-    grid-area: 1 / 5 / 2 / 6;
-    border-top-right-radius: 55px;
-    border-bottom-right-radius: 55px;
-
-    line-height: 85px;
+.app-download:hover {
+    color: black;
+    box-shadow: 0.2vw 0.2vw 0.1vw 0.1vw rgba(19, 53, 39, 0.3);
 }
 
 /* landing section */
@@ -134,190 +96,71 @@ main {
     height: min-content;
 
     display: flex;
-    justify-content: flex-end;
-}
+    flex-direction: column;
+    align-items: center;
 
-#landing-section aside {
-    width: 50vw;
+    position: relative;
 
-    background: rgb(15, 22, 85);
-    background: linear-gradient(
-        13deg,
-        rgba(44, 15, 85, 1) 0%,
-        rgb(38, 29, 115) 100%
-    );
-
-    /* background: rgb(137, 51, 148); */
-    background: linear-gradient(
-        to top right,
-        rgb(42, 12, 82),
-        rgb(71, 25, 131)
-    );
-}
-
-#landing-section aside div {
-    margin: 80px 15%;
-}
-
-#landing-section-logo {
-    height: 190px;
-    width: 90px;
-
-    object-fit: fill;
+    padding-bottom: 50vw;
 }
 
 #catchphrase {
+    position: absolute;
+
     font-family: var(--ff-accent);
-    font-size: 75px;
-    line-height: 60px;
-
-    color: rgb(255, 255, 255);
-
-    margin-top: 140px;
-}
-
-#landing-section a {
-    font-family: var(--ff-accent);
-    font-size: 35px;
-    font-weight: 900;
-    line-height: 7rem;
-    text-decoration: none;
+    font-size: 4vw;
+    line-height: 3vw;
     text-align: center;
 
-    background-color: white;
-    color: black;
+    color: white;
+    top: 25vw;
+}
 
-    height: 7rem;
-    width: 30rem;
-
-    border-radius: 0px 25px 25px 25px;
-    border: none;
-
-    display: block;
-
-    margin-top: 120px;
+#water-splash {
+    position: absolute;
+    top: 40vw;
+    left: 10vw;
 }
 
 #lading-section-image {
     height: 100%;
     width: 50vw;
 
-    object-fit: cover;
-}
-
-/* app store section */
-
-#appstore-section {
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding-top: 8rem;
-}
-
-#appstore-section h2 {
-    font-size: 80px;
-    font-weight: 900;
-    text-align: center;
-
-    line-height: 60px;
-}
-
-#appstore-section article {
-    font-family: var(--ff-primary);
-    font-size: 5rem;
-    font-weight: 800;
-    text-align: center;
-}
-
-#scroll-magic {
-    background-color: black;
-
-    height: 800px;
-    width: 75%;
-
-    margin-top: 15rem;
-    border-radius: 0px 50px 50px 50px;
-
-    position: relative;
-}
-
-#iphone-bank {
-    height: 1100px;
+    z-index: 3;
 
     object-fit: cover;
+}
+
+#iphone-landing-page {
+    height: 60vw;
 
     position: absolute;
-
-    top: -5.5rem;
-
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    top: 35vw;
 }
 
-#scroll-magic div {
-    background-color: #fff;
-
-    height: 6rem;
-    width: 15rem;
-
-    border-radius: 15px;
-
-    /* visibility: hidden; */
-}
-
-#message-1 {
-    position: absolute;
-    top: 6rem;
-    left: 2.5rem;
-}
-
-#message-2 {
-    position: absolute;
-    top: 15rem;
-    right: 2.5rem;
-}
-
-#message-3 {
-    position: absolute;
-    bottom: 6rem;
-    left: 2.5rem;
-}
-
-#scroll-magic div.show {
-    visibility: visible;
-}
-
-#download-options {
+#download-links {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: row;
 
-    margin-top: 13rem;
-    padding: 5px;
+    position: absolute;
+    top: 100vw;
 }
 
-.download-button {
-    height: 100px;
-    width: 300px;
+.download-links {
+    height: 5vw;
+    width: 15vw;
 
-    margin: 0px 20px;
-
-    border: none;
+    margin: 0px 0.5vw;
 }
 
-#google-play {
-    background: url(assets/google-play.png);
-    background-size: cover;
-}
+#landing-section-download-link {
+    height: 5vw;
 
-#app-store {
-    background: url(assets/app-store.png);
-    background-size: cover;
+    line-height: 5vw;
+    font-size: 1.8vw;
+    text-align: center;
+
+    padding: 0vw 0vw;
 }
 
 /* partners  section */
@@ -328,14 +171,14 @@ main {
     flex-direction: column;
     align-items: center;
 
-    margin-top: 15rem;
+    margin-top: 15vw;
 }
 
 #partners-section h3 {
-    font-size: 40px;
-    font-weight: 900;
+    font-size: 1.8vw;
+    font-weight: 600;
 
-    margin-bottom: 5rem;
+    margin-bottom: 3vw;
 }
 
 .marquee {
@@ -397,21 +240,24 @@ main {
 }
 
 .marquee-content li img {
-    width: 300px;
-    height: 50px;
+    width: 15vw;
+    height: 4vw;
     object-fit: contain;
+
+    filter: grayscale(1);
 }
 
+/* founders */
 #founders-section {
-    padding: 8rem 7rem;
+    padding: 10vw 8vw;
 
     display: flex;
     flex-direction: row;
 }
 
 #founders {
-    height: 30rem;
-    width: 45rem;
+    height: 20vw;
+    width: 30vw;
 }
 
 #founders-section aside {
@@ -422,24 +268,33 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin: 0px 3vw;
 }
 
 #founders-section h3 {
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 3vw;
+    font-weight: 400;
 }
 
 #founders-section article {
     font-family: var(--ff-primary);
-    font-size: 55px;
-    font-weight: 650;
+    font-size: 3vw;
+    font-weight: 700;
 
-    margin-top: 1.7rem;
+    width: 70%;
+
+    margin-top: 1vw;
+}
+
+#founders-section img {
+    width: 40vw;
+    height: 25vw;
 }
 
 /* strategie-seciton */
 #strategy-section {
-    height: 1500px;
+    margin-top: 8vw;
 
     display: flex;
     flex-direction: column;
@@ -447,70 +302,20 @@ main {
 }
 
 #strategy-section h2 {
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 2vw;
+    line-height: 1.8vw;
+    font-weight: 900;
+    text-align: center;
 }
 
 #iphone-banner {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 
-    margin-top: 200px;
+    margin-top: 4vw;
 
-    width: 100vw;
-    padding: 20px;
-}
-
-#iphone-banner .text-list {
-    list-style: none;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    margin-top: 1rem;
-}
-
-#iphone-banner .text-list div {
-    margin-right: 1rem;
-}
-
-#iphone-banner-button {
-    background-color: var(--purple);
-    color: #fff;
-    font-family: var(--ff-accent);
-    font-size: 25px;
-    font-weight: 900;
-
-    height: 7rem;
-    width: 25rem;
-
-    border: none;
-    border-radius: 0px 25px 25px 25px;
-
-    margin-top: 2rem;
-}
-
-.list-style {
-    background-color: var(--purple);
-
-    height: 80px;
-    width: 80px;
-
-    border-radius: 40px;
-
-    margin-bottom: 50px;
-}
-
-#iphone-banner .text-list p {
-    font-family: var(--ff-accent);
-    font-weight: 100;
-
-    width: 15rem;
-    height: 80;
-
-    display: block;
+    padding: 2vw;
 }
 
 /* glide setting stuff */
@@ -518,19 +323,16 @@ main {
 #iphone-banner-aside {
     position: relative;
 
-    margin: 0px 20px;
-
-    height: 1200px;
-    width: 800px;
+    height: 60vw;
+    width: 40vw;
 }
 
 #iphone-text-aside {
-    width: 800px;
+    width: 40vw;
 }
 
 #iphone-assets {
-    height: 1200px;
-    width: 800px;
+    width: 30vw;
 
     position: absolute;
 
@@ -545,7 +347,7 @@ main {
     left: 50%;
     transform: translate(-50%);
 
-    top: 700px;
+    top: 22vw;
 }
 
 .glide {
@@ -563,8 +365,8 @@ main {
 }
 
 .glide__slide img {
-    height: 250px;
-    width: 250px;
+    height: 12vw;
+    width: 12vw;
 
     border-radius: 30px;
 
@@ -778,6 +580,12 @@ footer img {
     width: 75px;
 }
 
+/* @media screen and (max-width: 1600px) {
+    #founders-section article {
+        font-size: 3vw;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #catchphrase {
         margin-top: 12rem;
@@ -819,25 +627,6 @@ footer img {
 
     #appstore-section h2 {
         font-size: 3rem;
-    }
-
-    #scroll-magic {
-        height: 50vh;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #appstore-section div {
-        background-color: transparent;
-    }
-
-    #appstore-section img {
-        width: 270px;
-        height: 400px;
-
-        object-fit: cover;
     }
 
     #download-options {
@@ -1044,4 +833,4 @@ footer img {
         flex-direction: column;
         align-items: center;
     }
-}
+} */
