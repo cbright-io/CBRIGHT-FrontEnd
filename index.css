@@ -194,7 +194,7 @@ main {
 .marquee:after {
     position: absolute;
     top: 0;
-    width: 10rem;
+    width: 4vw;
     height: 100%;
     content: "";
     z-index: 1;
@@ -236,7 +236,7 @@ main {
     font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
     white-space: nowrap;
 
-    margin-right: max(140px, 3rem);
+    margin-right: 3vw;
 }
 
 .marquee-content li img {
