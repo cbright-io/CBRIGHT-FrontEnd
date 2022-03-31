@@ -87,8 +87,6 @@ nav a:hover {
 /* main */
 
 main {
-    height: 100vh;
-
     padding-top: 20rem;
 
     display: flex;
@@ -139,7 +137,7 @@ input {
     height: 5vw;
 
     font-family: var(--ff-primary);
-    font-size: 30px;
+    font-size: 2vw;
     text-align: center;
     color: black;
 
@@ -155,12 +153,12 @@ input::placeholder {
 
 button {
     height: 5vw;
-    width: 10vw;
+    width: 15vw;
 
     margin-left: 1vw;
 
     font-family: var(--ff-primary);
-    font-size: 40px;
+    font-size: 3vw;
 
     background-color: rgba(255, 255, 255, 0.3);
     color: white;
@@ -176,9 +174,9 @@ button:hover {
     background-color: rgba(190, 190, 190, 0.8);
 }
 
-/* footer-section */
-
 footer {
+    margin-top: 10vw;
+
     width: 100%;
 
     background-color: rgb(187, 208, 227);
@@ -186,8 +184,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-top: 8vw;
 }
 
 #socials {
@@ -201,6 +197,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    padding-bottom: 20vw;
 }
 
 #socials img {
@@ -213,11 +211,11 @@ footer {
 }
 
 #socials-h2 {
-    margin: 2vw;
+    margin: 4vw;
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-accent);
     color: white;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 #socials-ul {
@@ -246,7 +244,7 @@ footer {
 }
 
 .footer-ul {
-    margin-top: 2vw;
+    margin-top: 1vw;
     list-style: none;
 }
 
@@ -258,7 +256,8 @@ footer li a {
     color: rgb(22, 24, 44);
 
     font-family: var(--ff-accent);
-    font-size: 1.8vw;
+    font-size: 1.2vw;
+    font-weight: 500;
 
     text-decoration: none;
 }
@@ -266,13 +265,14 @@ footer li {
     color: rgb(22, 24, 44);
 
     font-family: var(--ff-accent);
-    font-size: 1.8vw;
+    font-size: 1.2vw;
 
     text-decoration: none;
 }
 
 footer h2 {
-    font-size: 3vw;
+    font-size: 1.2vw;
+    font-weight: 900;
     color: rgb(22, 24, 44);
 }
 
