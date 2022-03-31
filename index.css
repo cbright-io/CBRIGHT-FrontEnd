@@ -112,7 +112,7 @@ main {
 
     font-family: var(--ff-accent);
     font-size: 4vw;
-    line-height: 3.6vw;
+    line-height: 4vw;
     text-align: center;
 
     color: white;
@@ -190,23 +190,6 @@ main {
     position: relative;
 }
 
-/* .marquee:before,
-.marquee:after {
-    position: absolute;
-    top: 0;
-    width: 4vw;
-    height: 100%;
-    content: "";
-    z-index: 1;
-}
-.marquee:before {
-    left: 0;
-    background: linear-gradient(to right, #fff 0%, transparent 100%);
-}
-.marquee:after {
-    right: 0;
-    background: linear-gradient(to left, #fff 0%, transparent 100%);
-} */
 .marquee-content {
     list-style: none;
     height: 100%;
@@ -273,13 +256,13 @@ main {
 }
 
 #founders-section h3 {
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: 400;
 }
 
 #founders-section article {
     font-family: var(--ff-primary);
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: 700;
 
     width: 70%;
@@ -288,8 +271,8 @@ main {
 }
 
 #founders-section img {
-    width: 40vw;
-    height: 25vw;
+    width: 35vw;
+    height: 20vw;
 }
 
 /* strategie-seciton */
@@ -309,15 +292,17 @@ main {
 
 #strategy-section-h2 {
     font-size: 2.5vw;
-    line-height: 1.8vw;
+    line-height: 2.5vw;
     font-weight: 600;
     font-family: var(--ff-primary);
     text-align: center;
+
+    margin-top: 2.5vw;
 }
 
 #strategy-section h3 {
     font-size: 2.3vw;
-    font-weight: 900;
+    font-weight: 600;
     font-family: var(--ff-primary);
 
     color: var(--turquoise-green);
@@ -329,6 +314,7 @@ main {
     font-size: 1.5vw;
     font-family: var(--ff-primary);
     text-align: center;
+    font-weight: 650;
 
     color: black;
 
@@ -574,11 +560,11 @@ footer {
 }
 
 #socials-h2 {
-    margin: 2vw;
+    margin: 4vw;
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-accent);
     color: white;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 #socials-ul {
@@ -607,7 +593,7 @@ footer {
 }
 
 .footer-ul {
-    margin-top: 2vw;
+    margin-top: 1vw;
     list-style: none;
 }
 
@@ -619,7 +605,8 @@ footer li a {
     color: rgb(22, 24, 44);
 
     font-family: var(--ff-accent);
-    font-size: 1.8vw;
+    font-size: 1.2vw;
+    font-weight: 500;
 
     text-decoration: none;
 }
@@ -627,13 +614,14 @@ footer li {
     color: rgb(22, 24, 44);
 
     font-family: var(--ff-accent);
-    font-size: 1.8vw;
+    font-size: 1.2vw;
 
     text-decoration: none;
 }
 
 footer h2 {
-    font-size: 3vw;
+    font-size: 1.2vw;
+    font-weight: 900;
     color: rgb(22, 24, 44);
 }
 

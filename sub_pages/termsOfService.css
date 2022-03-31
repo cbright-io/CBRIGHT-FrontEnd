@@ -114,8 +114,6 @@ ol {
     margin-left: 2vw;
 }
 
-/* footer-section */
-
 footer {
     width: 100%;
 
@@ -149,11 +147,11 @@ footer {
 }
 
 #socials-h2 {
-    margin: 2vw;
+    margin: 4vw;
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-accent);
     color: white;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 #socials-ul {
@@ -182,7 +180,7 @@ footer {
 }
 
 .footer-ul {
-    margin-top: 2vw;
+    margin-top: 1vw;
     list-style: none;
 }
 
@@ -194,7 +192,8 @@ footer li a {
     color: rgb(22, 24, 44);
 
     font-family: var(--ff-accent);
-    font-size: 1.8vw;
+    font-size: 1.2vw;
+    font-weight: 500;
 
     text-decoration: none;
 }
@@ -202,13 +201,14 @@ footer li {
     color: rgb(22, 24, 44);
 
     font-family: var(--ff-accent);
-    font-size: 1.8vw;
+    font-size: 1.2vw;
 
     text-decoration: none;
 }
 
 footer h2 {
-    font-size: 3vw;
+    font-size: 1.2vw;
+    font-weight: 900;
     color: rgb(22, 24, 44);
 }
 
