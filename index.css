@@ -190,7 +190,7 @@ main {
     position: relative;
 }
 
-.marquee:before,
+/* .marquee:before,
 .marquee:after {
     position: absolute;
     top: 0;
@@ -206,7 +206,7 @@ main {
 .marquee:after {
     right: 0;
     background: linear-gradient(to left, #fff 0%, transparent 100%);
-}
+} */
 .marquee-content {
     list-style: none;
     height: 100%;
@@ -233,7 +233,7 @@ main {
     flex-shrink: 0;
     width: var(--marquee-element-width);
     max-height: 100%;
-    font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
+    font-size: calc(var(--marquee-height) * 3 / 4);
     white-space: nowrap;
 
     margin-right: 3vw;
@@ -466,7 +466,7 @@ main {
 #steps-section {
     width: 100vw;
 
-    padding: 10rem;
+    padding: 3vw;
 
     display: flex;
     flex-direction: column;
@@ -553,9 +553,32 @@ footer {
 
 #socials {
     width: 100%;
+
     padding: 2vw 10vw;
 
     background-color: var(--navy);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#socials img {
+    height: 5vw;
+    width: 5vw;
+}
+
+.social {
+    height: 7vw;
+}
+
+#socials-h2 {
+    margin: 2vw;
+
+    font-family: var(--ff-primary);
+    color: white;
+    font-size: 3vw;
 }
 
 #socials-ul {
@@ -563,7 +586,17 @@ footer {
     justify-content: space-around;
     align-items: center;
 
+    width: 80%;
+
     list-style: none;
+}
+
+.ticktock-background {
+    height: 5vw;
+    width: 5vw;
+
+    background-color: white;
+    border-radius: 50%;
 }
 
 #nav-footer {
@@ -574,31 +607,34 @@ footer {
 }
 
 .footer-ul {
-    margin-top: 4rem;
+    margin-top: 2vw;
     list-style: none;
 }
 
 footer li {
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 footer li a {
-    color: white;
+    color: rgb(22, 24, 44);
 
     font-family: var(--ff-accent);
-    font-size: 30px;
+    font-size: 3vw;
+
+    text-decoration: none;
+}
+footer li {
+    color: rgb(22, 24, 44);
+
+    font-family: var(--ff-accent);
+    font-size: 2vw;
 
     text-decoration: none;
 }
 
 footer h2 {
-    font-size: 30px;
-    color: rgb(158, 158, 158);
-}
-
-footer img {
-    height: 80px;
-    width: 80px;
+    font-size: 3vw;
+    color: rgb(22, 24, 44);
 }
 
 #logos {
@@ -609,14 +645,21 @@ footer img {
     align-items: center;
 }
 
-#logos img {
-    height: 100px;
-    width: 50px;
+#stg {
+    width: 70vw;
 
-    object-fit: cover;
+    margin-top: 3vw;
 }
 
-#logos img:nth-last-of-type(1) {
-    height: 75px;
-    width: 75px;
+#stg ul {
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+.stg-icon {
+    height: 4vw;
+
+    border-radius: 0.2vw;
 }
