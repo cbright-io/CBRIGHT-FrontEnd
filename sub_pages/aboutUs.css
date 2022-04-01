@@ -227,7 +227,7 @@ footer {
 }
 
 #socials-h2 {
-    margin: 2vw;
+    margin-bottom: 2vw;
 
     font-family: var(--ff-barlow);
     color: white;
@@ -254,22 +254,27 @@ footer {
 
 #nav-footer {
     width: 100%;
+    padding: 2vw 0px;
 
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .footer-ul {
-    width: 15vw;
+    width: 11vw;
 
-    margin: 0px 4vw;
+    margin: 1px 4vw;
 
     list-style: none;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer li {
+    margin-bottom: 1vw;
 }
 
 footer li a {
@@ -286,6 +291,7 @@ footer li {
 
     font-family: var(--ff-barlow);
     font-size: 1.2vw;
+    font-weight: 500;
 
     text-decoration: none;
 }
@@ -321,4 +327,18 @@ footer h2 {
     margin: 0.2vw;
 
     border-radius: 0.2vw;
+}
+
+#solutions {
+    align-items: flex-start;
+}
+
+#company {
+}
+
+#copy-right {
+    align-items: flex-end;
+}
+#copy-right li {
+    text-align: right;
 }
