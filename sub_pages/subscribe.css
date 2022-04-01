@@ -1,13 +1,6 @@
 :root {
-    --ff-primary: "Barlow", sans-serif;
-    --ff-accent: "Roboto Mono", monospace;
-    --marquee-width: 100vw;
-    --marquee-height: 12vh;
-    --marquee-elements-displayed: 5;
-    --marquee-element-width: calc(
-        var(--marquee-width) / var(--marquee-elements-displayed)
-    );
-    --marquee-animation-duration: 50s;
+    --ff-barlow: "Barlow", sans-serif;
+    --ff-roboto: "Roboto Mono", monospace;
 
     --purple: rgb(74, 37, 125);
     --navy: rgb(22, 24, 44);
@@ -27,16 +20,17 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--ff-accent);
+    font-family: var(--ff-barlow);
 }
 
-/* nav */
+/* nav section */
+
 nav {
     position: fixed;
 
     background-color: white;
 
-    padding: 2vw;
+    padding: 1vw;
 
     height: 8vw;
     width: 100%;
@@ -51,9 +45,9 @@ nav {
 nav a {
     color: black;
 
-    font-family: var(--ff-primary);
-    font-size: 2.5vw;
-    font-weight: 900;
+    font-family: var(--ff-barlow);
+    font-size: 1.5vw;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -72,9 +66,9 @@ nav a:hover {
     border-radius: 0px 0.5vw 0.5vw 0.5vw;
     box-shadow: 0.2vw 0.2vw 0.1vw 0.1vw rgba(91, 239, 178, 0.3);
 
-    font-family: var(--ff-accent);
-    font-weight: 400;
-    font-size: 1.5vw;
+    font-family: var(--ff-barlow);
+    font-weight: 500;
+    font-size: 1.25vw;
 }
 
 .app-download:hover {
@@ -105,7 +99,7 @@ main {
 }
 
 #contact-h2 {
-    font-family: var(--ff-primary);
+    font-family: var(--ff-barlow);
     font-size: 6vw;
     font-weight: 400;
 
@@ -128,7 +122,7 @@ form {
 }
 
 label {
-    font-family: var(--ff-primary);
+    font-family: var(--ff-roboto);
     font-size: 50px;
 
     color: black;
@@ -138,7 +132,7 @@ input {
     width: 30vw;
     height: 5vw;
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-barlow);
     font-size: 2vw;
     text-align: center;
 
@@ -159,7 +153,7 @@ button {
 
     margin-left: 1vw;
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-roboto);
     font-size: 3vw;
 
     background-color: rgba(255, 255, 255, 0.3);
@@ -239,7 +233,7 @@ button:hover {
 }
 
 .text article {
-    font-family: var(--ff-primary);
+    font-family: var(--ff-roboto);
     font-size: 1vw;
     padding: 2vw;
 }
@@ -286,7 +280,7 @@ footer {
 #socials-h2 {
     margin: 4vw;
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-barlow);
     color: white;
     font-size: 2vw;
 }
@@ -329,7 +323,7 @@ footer li {
 footer li a {
     color: rgb(22, 24, 44);
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-barlow);
     font-size: 1.2vw;
     font-weight: 500;
 
@@ -338,7 +332,7 @@ footer li a {
 footer li {
     color: rgb(22, 24, 44);
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-barlow);
     font-size: 1.2vw;
 
     text-decoration: none;
