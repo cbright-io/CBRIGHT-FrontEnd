@@ -525,74 +525,7 @@ main {
     text-align: right;
 }
 
-#team-section {
-    height: 40vh;
-
-    padding-top: 10vw;
-    padding-bottom: 40vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#team-text {
-    font-size: 3vw;
-}
-
-#multi1 {
-    margin-top: 8vw;
-
-    width: 80%;
-}
-
-.glide__slides {
-    text-align: center;
-}
-
-.glide__slide {
-    position: relative;
-}
-
-.glide__slides img {
-    height: 25vw;
-    width: 25vw;
-}
-
-.text {
-    height: 25vw;
-    width: 25vw;
-
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0;
-
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-
-    z-index: 3;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: 1s;
-}
-
-.text article {
-    font-family: var(--ff-primary);
-    font-size: 1vw;
-    padding: 2vw;
-}
-.text:hover {
-    opacity: 100;
-}
+/* footer-section */
 
 footer {
     width: 100%;
@@ -629,7 +562,7 @@ footer {
 #socials-h2 {
     margin: 4vw;
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-accent);
     color: white;
     font-size: 2vw;
 }
@@ -656,12 +589,11 @@ footer {
     width: 100%;
 
     display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
+    justify-content: space-evenly;
 }
 
 .footer-ul {
-    margin: 2vw;
+    margin-top: 1vw;
     list-style: none;
 }
 
@@ -672,7 +604,7 @@ footer li {
 footer li a {
     color: rgb(22, 24, 44);
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-accent);
     font-size: 1.2vw;
     font-weight: 500;
 
@@ -681,7 +613,7 @@ footer li a {
 footer li {
     color: rgb(22, 24, 44);
 
-    font-family: var(--ff-primary);
+    font-family: var(--ff-accent);
     font-size: 1.2vw;
 
     text-decoration: none;
@@ -703,19 +635,19 @@ footer h2 {
 
 #stg {
     width: 70vw;
+
+    margin-top: 3vw;
 }
 
 #stg ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
     list-style: none;
 }
 
 .stg-icon {
     height: 4vw;
-
-    margin: 0.2vw;
 
     border-radius: 0.2vw;
 }
