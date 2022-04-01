@@ -526,7 +526,7 @@ main {
     text-align: right;
 }
 
-/* footer-section */
+/* footer */
 
 footer {
     width: 100%;
@@ -561,7 +561,7 @@ footer {
 }
 
 #socials-h2 {
-    margin: 4vw;
+    margin: 2vw;
 
     font-family: var(--ff-barlow);
     color: white;
@@ -590,12 +590,20 @@ footer {
     width: 100%;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
 
 .footer-ul {
-    margin-top: 1vw;
+    width: 15vw;
+
+    margin: 0px 4vw;
+
     list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer li {
@@ -636,19 +644,19 @@ footer h2 {
 
 #stg {
     width: 70vw;
-
-    margin-top: 3vw;
 }
 
 #stg ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     list-style: none;
 }
 
 .stg-icon {
     height: 4vw;
+
+    margin: 0.2vw;
 
     border-radius: 0.2vw;
 }

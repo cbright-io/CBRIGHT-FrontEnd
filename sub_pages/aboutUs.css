@@ -192,6 +192,8 @@ nav a:hover {
     opacity: 100;
 }
 
+/* footer */
+
 footer {
     width: 100%;
 
@@ -225,7 +227,7 @@ footer {
 }
 
 #socials-h2 {
-    margin: 4vw;
+    margin: 2vw;
 
     font-family: var(--ff-barlow);
     color: white;
@@ -259,12 +261,15 @@ footer {
 }
 
 .footer-ul {
-    margin: 2vw;
-    list-style: none;
-}
+    width: 15vw;
 
-footer li {
-    margin-bottom: 1vw;
+    margin: 0px 4vw;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer li a {
