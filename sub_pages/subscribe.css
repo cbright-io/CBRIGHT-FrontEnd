@@ -46,8 +46,6 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
-    border-bottom: 2px solid black;
 }
 
 nav a {
@@ -87,7 +85,7 @@ nav a:hover {
 /* main */
 
 main {
-    padding-top: 20rem;
+    padding-top: 10rem;
 
     display: flex;
     flex-direction: column;
@@ -96,10 +94,14 @@ main {
 }
 
 #container {
-    background-color: var(--turquoise-green);
+    background-image: url("../assets/backgrounds/iceland2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 1vw;
 
-    padding: 4vw 2vw;
+    padding: 7vw 2vw;
+
+    box-shadow: 0 0 200px rgba(134, 131, 131, 0.9) inset;
 }
 
 #contact-h2 {
@@ -139,16 +141,16 @@ input {
     font-family: var(--ff-primary);
     font-size: 2vw;
     text-align: center;
-    color: black;
 
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 0.2vw solid rgba(158, 158, 158, 0.8);
+    color: rgb(190, 190, 190);
+    background-color: rgb(255, 255, 255);
 
+    border: none;
     border-radius: 1vw;
 }
 
 input::placeholder {
-    color: white;
+    color: rgb(190, 190, 190);
 }
 
 button {
@@ -163,7 +165,7 @@ button {
     background-color: rgba(255, 255, 255, 0.3);
     color: white;
 
-    border: 0.2vw solid rgba(158, 158, 158, 0.8);
+    border: none;
     border-radius: 1vw;
 
     transition: ease-in-out 1s;
@@ -173,6 +175,79 @@ button:hover {
     transform: scale(1.05);
     background-color: rgba(190, 190, 190, 0.8);
 }
+
+/* footer */
+
+#team-section {
+    height: 40vh;
+
+    padding-top: 10vw;
+    padding-bottom: 40vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team-text {
+    font-size: 3vw;
+}
+
+#multi1 {
+    margin-top: 8vw;
+
+    width: 80%;
+}
+
+.glide__slides {
+    text-align: center;
+}
+
+.glide__slide {
+    position: relative;
+}
+
+.glide__slides img {
+    height: 25vw;
+    width: 25vw;
+}
+
+.text {
+    height: 25vw;
+    width: 25vw;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 1s;
+}
+
+.text article {
+    font-family: var(--ff-primary);
+    font-size: 1vw;
+    padding: 2vw;
+}
+.text:hover {
+    opacity: 100;
+}
+
+/* footer */
 
 footer {
     margin-top: 10vw;
@@ -211,7 +286,7 @@ footer {
 #socials-h2 {
     margin: 4vw;
 
-    font-family: var(--ff-accent);
+    font-family: var(--ff-primary);
     color: white;
     font-size: 2vw;
 }
@@ -238,11 +313,12 @@ footer {
     width: 100%;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
 
 .footer-ul {
-    margin-top: 1vw;
+    margin: 2vw;
     list-style: none;
 }
 
@@ -253,7 +329,7 @@ footer li {
 footer li a {
     color: rgb(22, 24, 44);
 
-    font-family: var(--ff-accent);
+    font-family: var(--ff-primary);
     font-size: 1.2vw;
     font-weight: 500;
 
@@ -262,7 +338,7 @@ footer li a {
 footer li {
     color: rgb(22, 24, 44);
 
-    font-family: var(--ff-accent);
+    font-family: var(--ff-primary);
     font-size: 1.2vw;
 
     text-decoration: none;
@@ -284,19 +360,19 @@ footer h2 {
 
 #stg {
     width: 70vw;
-
-    margin-top: 3vw;
 }
 
 #stg ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     list-style: none;
 }
 
 .stg-icon {
     height: 4vw;
+
+    margin: 0.2vw;
 
     border-radius: 0.2vw;
 }
