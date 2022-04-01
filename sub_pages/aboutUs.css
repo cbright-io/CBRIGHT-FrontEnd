@@ -77,13 +77,12 @@ nav a:hover {
 }
 
 /* main */
-main {
-    height: 90vh;
-}
+
 /* founders-section */
 
 #team-photo-section {
     padding-top: 15vw;
+    padding-bottom: 15vw;
 
     display: flex;
     flex-direction: row;
