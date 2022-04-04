@@ -6,6 +6,14 @@
     --navy: rgb(22, 24, 44);
     --turquoise-green: rgb(91, 239, 178);
     --turquoise-blue: rgb(10, 185, 186);
+
+    --marquee-width: 100vw;
+    --marquee-height: 12vh;
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(
+        var(--marquee-width) / var(--marquee-elements-displayed)
+    );
+    --marquee-animation-duration: 170s;
 }
 
 * {
