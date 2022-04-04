@@ -76,12 +76,12 @@ nav a:hover {
     box-shadow: 0.2vw 0.2vw 0.1vw 0.1vw rgba(19, 53, 39, 0.3);
 }
 
-/* main */
+
 
 /* founders-section */
 
 #team-photo-section {
-    padding-top: 15vw;
+    padding-top: 25vw;
     padding-bottom: 15vw;
 
     display: flex;
