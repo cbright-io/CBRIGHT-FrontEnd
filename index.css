@@ -170,14 +170,14 @@ main {
     flex-direction: column;
     align-items: center;
 
-    margin-top: 3vw;
+
 }
 
 #partners-section h3 {
     font-size: 1.56vw;
     font-weight: 700;
 
-    margin-bottom: 3vw;
+    margin-bottom: 5vw;
 }
 
 .marquee {
@@ -231,7 +231,7 @@ main {
 
 /* founders */
 #founders-section {
-    padding: 10vw 8vw;
+    padding: 8vw 10vw;
 
     display: flex;
     flex-direction: row;
@@ -267,7 +267,7 @@ main {
 
     width: 70%;
 
-    margin-top: 1vw;
+    margin-top: 3vw;
 }
 
 #founders-section img {
@@ -278,8 +278,6 @@ main {
 /* strategie-seciton */
 
 #strategy-section {
-    margin-top: 8vw;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,7 +289,7 @@ main {
 }
 
 #strategy-section-h2 {
-    font-size: 2vw;
+    font-size: 2.3vw;
     line-height: 2.5vw;
     font-weight: 600;
     font-family: var(--ff-barlow);
@@ -311,10 +309,10 @@ main {
 }
 
 #strategy-section h5 {
-    font-size: 1.2vw;
+    font-size: 2vw;
     font-family: var(--ff-barlow);
     text-align: center;
-    font-weight: 650;
+    font-weight: 600;
 
     color: black;
 
@@ -331,8 +329,7 @@ main {
 
 #strategy-section article {
     width: 30vw;
-
-    font-size: 1.6vw;
+    font-size: 2vw;
     font-family: var(--ff-barlow);
     font-weight: 500;
 
@@ -487,7 +484,7 @@ main {
 
 #steps-section h2 {
     font-size: 2.3vw;
-    font-weight: 400;
+    font-weight: 700;
     font-family: var(--ff-roboto);
 
     color: var(--turquoise-green);
@@ -496,7 +493,7 @@ main {
 }
 
 #steps-section h3 {
-    font-size: 2.4vw;
+    font-size: 2.3vw;
     font-weight: 700;
     font-family: var(--ff-barlow);
 
@@ -506,7 +503,7 @@ main {
 #steps-section article {
     width: 20vw;
 
-    font-size: 1.6vw;
+    font-size: 2vw;
     font-family: var(--ff-barlow);
     font-weight: 500;
 
@@ -660,7 +657,7 @@ footer h2 {
 }
 
 .stg-icon {
-    height: 4vw;
+    height: 6.8vw;
 
     margin: 0.2vw;
 
