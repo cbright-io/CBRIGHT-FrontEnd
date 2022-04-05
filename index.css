@@ -241,54 +241,6 @@ main {
     width: 15vw;
     height: 4vw;
     object-fit: contain;
-
-    /* filter: grayscale(1); */
-}
-
-/* founders */
-#founders-section {
-    padding: 8vw 10vw;
-
-    display: flex;
-    flex-direction: row;
-}
-
-#founders {
-    height: 20vw;
-    width: 30vw;
-}
-
-#founders-section aside {
-    width: 50%;
-}
-
-#founders-section aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin: 0px 3vw;
-}
-
-#founders-section h3 {
-    font-size: 2.3vw;
-    font-weight: 500;
-    font-family: var(--ff-roboto);
-}
-
-#founders-section article {
-    font-family: var(--ff-barlow);
-    font-size: 1.8vw;
-    font-weight: 700;
-
-    width: 70%;
-
-    margin-top: 3vw;
-}
-
-#founders-section img {
-    width: 35vw;
-    height: 20vw;
 }
 
 /* strategie-seciton */
@@ -297,6 +249,17 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 8vw 8vw
+}
+
+#strategy-title  {
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: var(--ff-barlow);
+    text-align: center;
+
+    margin-top: 2vw;
 }
 
 .strategy-aside {
@@ -304,17 +267,11 @@ main {
     width: 40vw;
 }
 
-#strategy-section-h2 {
-    font-size: 2.3vw;
-    line-height: 2.5vw;
-    font-weight: 600;
-    font-family: var(--ff-barlow);
-    text-align: center;
-
-    margin-top: 2.5vw;
+#iphone-text-aside {
+    padding-left: 8vw;
 }
 
-#strategy-section h3 {
+.steps-caption{
     font-size: 2.3vw;
     font-weight: 400;
     font-family: var(--ff-roboto);
@@ -324,7 +281,9 @@ main {
     margin-top: 2vw;
 }
 
-#strategy-section h4 {
+
+
+.steps-sub-caption {
     font-size: 2vw;
     font-weight: 700;
     font-family: var(--ff-barlow);
@@ -332,26 +291,26 @@ main {
     margin-top: 2vw;
 }
 
-#strategy-section h5 {
-    font-size: 2vw;
-    font-family: var(--ff-barlow);
-    text-align: center;
-    font-weight: 600;
 
-    color: black;
+.steps-article {
+     width: 25vw;
 
-    margin-top: 1vw;
-}
-
-
-
-#strategy-section article {
-    width: 30vw;
     font-size: 2vw;
     font-family: var(--ff-barlow);
     font-weight: 500;
 
     margin-top: 2vw;
+}
+
+
+
+.steps-img {
+    width: 40vw;
+}
+
+#strategy-img {
+    position: absolute;
+    z-index: 10;
 }
 
 #iphone-banner {
@@ -364,19 +323,37 @@ main {
     padding: 2vw;
 }
 
+.steps {
+    width: 80vw;
+    height: min-content;
+    padding: 1vw;
+
+    margin-top: 8vw;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.steps aside {
+    width: 50vw;
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
 /* glide setting stuff */
 
 #iphone-banner-aside {
     position: relative;
 }
 
-#iphone-assets {
-    width: 40vw;
 
-    position: absolute;
-
-    z-index: 10;
-}
 
 #container {
     width: 200vw;
@@ -386,7 +363,7 @@ main {
     left: 50%;
     transform: translate(-50%);
 
-    top: 30vw;
+    top: 32vw;
 }
 
 .glide {
@@ -462,89 +439,6 @@ main {
     background-color: rgb(86, 172, 136);
 }
 
-/* steps section */
-
-#steps-section {
-    width: 100vw;
-
-    padding: 3vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.steps {
-    width: 80vw;
-    height: min-content;
-    padding: 1vw;
-
-    margin-top: 8vw;
-
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-}
-
-.steps aside {
-    width: 30vw;
-    height: min-content;
-
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-
-}
-
-#steps-section img {
-    width: 40vw;
-}
-
-#steps-section h2 {
-    font-size: 2.3vw;
-    font-weight: 700;
-    font-family: var(--ff-roboto);
-
-    color: var(--turquoise-green);
-
-    margin-top: 2vw;
-}
-
-#steps-section h3 {
-    font-size: 2.3vw;
-    font-weight: 700;
-    font-family: var(--ff-barlow);
-
-    margin-top: 2vw;
-}
-
-#steps-section article {
-    width: 20vw;
-
-    font-size: 2vw;
-    font-family: var(--ff-barlow);
-    font-weight: 500;
-
-    margin-top: 2vw;
-}
-
-.steps:nth-of-type(2) aside:nth-of-type(1) div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    padding-left: 0;
-    padding-right: 1vw;
-}
-
-.steps:nth-of-type(2) aside:nth-of-type(1) h3 {
-    text-align: right;
-}
-
-.steps:nth-of-type(2) aside:nth-of-type(1) article {
-    text-align: right;
-}
-
 /* footer */
 
 footer {
@@ -571,7 +465,7 @@ footer {
 }
 
 
-.social {
+.socials {
     height: 8vw;
     width: 8vw;
 }
@@ -775,62 +669,48 @@ footer h2 {
         height: 6vw;
     }
 
-    /* founders section */
-
-    /* */ 
-
-    #founders {
-        height: 40vw;
-        width: 50vw;
-    }
-    #founders-section {
-        padding:8vw 0vw;
-    }
-    #founders-section h3 {
-        font-size: 5vw;
-        font-weight: 600;
-    }
-    #founders-section article {
-        font-size: 3.5vw;
-        width: 100%;
-        font-weight: 600;
-    }
-
     /* strategie section */
+
+    
 
     #strategy-section {
         margin-top: 10vw;
     }
 
-    #strategy-section-h2 {
+    #strategy-title  {
+    font-size: 5vw;
+    
+    margin-top: 2vw;
+}
+
+    .steps-caption {
         font-size: 5vw;
         line-height:4.5vw;
 
         margin-top: 4vw;
     }
 
-    #strategy-section h3 {
+    .steps-sub-caption {
         font-size: 5vw;
 
         margin-top: 3vw;
     }
 
-    #strategy-section h4 {
+    .steps-article {
+        width: 40vw;
+
         font-size: 3.5vw;
 
         margin-top: 2vw;
     }
 
-    #strategy-section h5 {
-        font-size: 3.5vw;
+    .steps-img {
+        width: 60vw;
+    }   
 
-        margin-top: 1vw;
+    #strategy-img {
+        left: 5vw;
     }
-    #strategy-section article {
-        font-size: 3vw;
-        width: 40vw;
-    }
-
     /* glide */ 
 
     #iphone-banner {
@@ -846,7 +726,8 @@ footer h2 {
         width: 50vw;
     }
     #container {
-        top: 45vw;
+        top: 53vw;
+        left: calc(50% + 8vw)
     }
     .glide__slide-img {
         height: 18vw;
@@ -864,35 +745,7 @@ footer h2 {
         line-height: 1.9vw;
     }
 
-    /* steps section */
-
-    /* */ 
-
-    #steps-section aside {
-     width: 50vw;
-    }
-
-    #steps-section img {
-        width: 55vw;
-    }
-    #steps-section h2 {
-        font-size: 5vw;
-
-        margin-top: 2vw;
-    }
-    #steps-section h3 {
-        font-size: 5vw;
-
-        margin-top: 2vw;
-    }
-    #steps-section article {
-        width: 40vw;
-
-        font-size: 3vw;
-
-        margin-top: 2vw;
-    }
-
+    
     /* footer */ 
     /* */ 
 

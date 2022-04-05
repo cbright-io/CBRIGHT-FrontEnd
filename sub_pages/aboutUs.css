@@ -103,6 +103,9 @@ nav a:hover {
 
 #team-photo-section img {
     height: 30vw;
+    border-radius: 50%;
+
+    box-shadow: 0.2vw 0.2vw 0.2vw 0.2vw rgba(91, 239, 178, 0.5);
 }
 
 #team-photo-section h3 {
@@ -156,6 +159,10 @@ nav a:hover {
 .glide__slides img {
     height: 25vw;
     width: 25vw;
+
+    border-radius: 50%;
+
+    border: 0.4vw solid rgba(91, 239, 178, 0.5);
 }
 
 .text {
@@ -218,14 +225,12 @@ footer {
     justify-content: center;
 }
 
-#socials img {
+
+.socials {
     height: 8vw;
     width: 8vw;
 }
-
-.social {
-    height: 7vw;
-}
+ 
 
 #socials-h2 {
     margin-bottom: 2vw;
@@ -323,7 +328,7 @@ footer h2 {
 }
 
 .stg-icon {
-    height: 4vw;
+    height: 6.8vw;
 
     margin: 0.2vw;
 
@@ -343,7 +348,6 @@ footer h2 {
 #copy-right li {
     text-align: right;
 }
-
 
 @media only screen and (max-width: 500px) {
     /* nav */ 
