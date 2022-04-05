@@ -148,8 +148,14 @@ main {
     flex-direction: row;
     align-items: center;
 
+    height: 5vw;
+
     position: absolute;
     top: 95vw;
+}
+
+#download-links img { 
+    height: 100%
 }
 
 .download-links {
@@ -166,6 +172,8 @@ main {
     font-size: 1.8vw;
     font-weight: 500;
     text-align: center;
+
+    display: block;
 
     padding: 0vw 0vw;
 }
@@ -263,7 +271,7 @@ main {
 }
 
 #founders-section h3 {
-    font-size: 1.8vw;
+    font-size: 2.3vw;
     font-weight: 500;
     font-family: var(--ff-roboto);
 }
@@ -316,6 +324,14 @@ main {
     margin-top: 2vw;
 }
 
+#strategy-section h4 {
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: var(--ff-barlow);
+
+    margin-top: 2vw;
+}
+
 #strategy-section h5 {
     font-size: 2vw;
     font-family: var(--ff-barlow);
@@ -327,13 +343,7 @@ main {
     margin-top: 1vw;
 }
 
-#strategy-section h4 {
-    font-size: 2.4vw;
-    font-weight: 700;
-    font-family: var(--ff-barlow);
 
-    margin-top: 2vw;
-}
 
 #strategy-section article {
     width: 30vw;
@@ -560,14 +570,12 @@ footer {
     justify-content: center;
 }
 
-#socials img {
+
+.social {
     height: 8vw;
     width: 8vw;
 }
-
-.social {
-    height: 7vw;
-}
+ 
 
 #socials-h2 {
     margin-bottom: 2vw;
@@ -684,4 +692,258 @@ footer h2 {
 }
 #copy-right li {
     text-align: right;
+}
+
+/* */ 
+/* */ 
+/* media and screen */ 
+/* */ 
+/* */ 
+
+
+@media only screen and (max-width: 500px) {
+    /* nav */ 
+    nav {
+        height: 20vw;
+    }
+    nav a{
+        font-size: 3.5vw;
+    }
+    .app-download {
+        font-size: 3vw;
+        padding: 2vw 2.5vw;
+        box-shadow: 0.5vw 0.5vw 0.25vw 0.25vw rgba(91, 239, 178, 0.3);
+    }
+
+    /* main */
+    /* */ 
+
+    /* landing section */
+
+    /* */ 
+    #landing-section {
+        padding-bottom: 120vw;
+    }
+
+    #water-background {
+        margin-top: 12vw;
+    }
+
+    #catchphrase {
+        font-size: 7vw;
+        line-height: 6.8vw;
+
+        top: 27vw
+    }
+    #water-splash {
+        width: 130vw;
+
+        top: 42vw;
+        left: -10vw;
+    }
+    #iphone-landing-page {
+        height: 100vw;
+
+        top: 42vw;
+    }
+    #download-links {
+        top: 145vw;
+
+        height: 15vw
+    }
+    #landing-section-download-link {
+        height: 7vw;
+        width: 18vw;
+
+        line-height: 7vw;
+        font-size: 3vw;
+    }
+    /* partners section */
+
+    /* */ 
+
+    #partners-section h3 {
+        font-size: 4vw;
+
+        margin-bottom: 8vw;
+    }
+    .marquee-content li {
+        margin-right: 5vw;
+    }
+    .marquee-content li img {
+        width: 20vw;
+        height: 6vw;
+    }
+
+    /* founders section */
+
+    /* */ 
+
+    #founders {
+        height: 40vw;
+        width: 50vw;
+    }
+    #founders-section {
+        padding:8vw 0vw;
+    }
+    #founders-section h3 {
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    #founders-section article {
+        font-size: 3.5vw;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    /* strategie section */
+
+    #strategy-section {
+        margin-top: 10vw;
+    }
+
+    #strategy-section-h2 {
+        font-size: 5vw;
+        line-height:4.5vw;
+
+        margin-top: 4vw;
+    }
+
+    #strategy-section h3 {
+        font-size: 5vw;
+
+        margin-top: 3vw;
+    }
+
+    #strategy-section h4 {
+        font-size: 3.5vw;
+
+        margin-top: 2vw;
+    }
+
+    #strategy-section h5 {
+        font-size: 3.5vw;
+
+        margin-top: 1vw;
+    }
+    #strategy-section article {
+        font-size: 3vw;
+        width: 40vw;
+    }
+
+    /* glide */ 
+
+    #iphone-banner {
+        margin-top: 8vw;
+    }
+
+    .strategy-aside {
+        height: 90vw;
+        width: 55vw;
+    }
+
+    #iphone-assets {
+        width: 50vw;
+    }
+    #container {
+        top: 45vw;
+    }
+    .glide__slide-img {
+        height: 18vw;
+        width: 18vw;
+
+    }
+    .tasks {
+        height: 18vw;
+        width: 18vw;
+
+        padding: 0.3vw;
+    }
+    .tasks h2 {
+        font-size: 2vw;
+        line-height: 1.9vw;
+    }
+
+    /* steps section */
+
+    /* */ 
+
+    #steps-section aside {
+     width: 50vw;
+    }
+
+    #steps-section img {
+        width: 55vw;
+    }
+    #steps-section h2 {
+        font-size: 5vw;
+
+        margin-top: 2vw;
+    }
+    #steps-section h3 {
+        font-size: 5vw;
+
+        margin-top: 2vw;
+    }
+    #steps-section article {
+        width: 40vw;
+
+        font-size: 3vw;
+
+        margin-top: 2vw;
+    }
+
+    /* footer */ 
+    /* */ 
+
+    #socials {
+        padding: 3vw 0vw;
+    }
+    #socials-h2 {
+        font-size: 3vw;
+
+        margin-bottom: 3vw;
+    }
+    #socials img {
+        height: 12vw;
+        width: 12vw;
+    }
+    .ticktock-background {
+        height: 12vw;
+        width: 12vw;
+
+        background-color: white;
+        border-radius: 50%;
+    }
+    .footer-ul {
+        width: 20vw;
+
+        margin: 1px 4vw;
+
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer li a {
+        font-size: 2vw;
+    }
+    footer li {
+        font-size: 2vw;
+    }
+    #stg {
+        width: 70vw;
+    }
+    #stg ul {
+        display: flex;
+        justify-content: center;
+
+        list-style: none;
+    }
+    .stg-icon {
+        height: 10vw;
+
+        margin: 0.4vw;
+    }
 }

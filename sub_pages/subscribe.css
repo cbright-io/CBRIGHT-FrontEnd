@@ -171,90 +171,7 @@ button:hover {
     background-color: rgba(190, 190, 190, 0.8);
 }
 
-/* footer */
 
-#team-section {
-    height: 40vh;
-
-    padding-top: 10vw;
-    padding-bottom: 40vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#team-text {
-    font-size: 3vw;
-}
-
-#multi1 {
-    margin-top: 8vw;
-
-    width: 80%;
-}
-
-.glide__slides {
-    text-align: center;
-}
-
-.glide__slide {
-    position: relative;
-}
-
-.glide__slides img {
-    height: 25vw;
-    width: 25vw;
-}
-
-.text {
-    height: 25vw;
-    width: 25vw;
-
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0;
-
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-
-    z-index: 3;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: 1s;
-}
-
-.text article {
-    font-family: var(--ff-roboto);
-    font-size: 1vw;
-    padding: 2vw;
-}
-.text:hover {
-    opacity: 100;
-}
-
-/* footer */
-
-footer {
-    margin-top: 10vw;
-
-    width: 100%;
-
-    background-color: rgb(187, 208, 227);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* footer */
 
@@ -405,4 +322,88 @@ footer h2 {
 }
 #copy-right li {
     text-align: right;
+}
+
+
+@media only screen and (max-width: 500px) {
+    /* nav */ 
+    nav {
+        height: 20vw;
+    }
+    nav a{
+        font-size: 3.5vw;
+    } 
+    .app-download {
+        font-size: 3vw;
+        padding: 2vw 2.5vw;
+        box-shadow: 0.5vw 0.5vw 0.25vw 0.25vw rgba(91, 239, 178, 0.3);
+    }
+
+    /* main */ 
+    /* */ 
+
+    main {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+
+    #container {
+        margin-top: 12vw;
+        padding: 10vw 15vw;
+    }
+
+
+    /* footer */ 
+    /* */ 
+
+    #socials {
+        padding: 3vw 0vw;
+    }
+    #socials-h2 {
+        font-size: 3vw;
+
+        margin-bottom: 3vw;
+    }
+    #socials img {
+        height: 12vw;
+        width: 12vw;
+    }   
+    .ticktock-background {
+        height: 12vw;
+        width: 12vw;
+
+        background-color: white;
+        border-radius: 50%;
+    }
+    .footer-ul {
+        width: 20vw;
+
+        margin: 1px 4vw;
+
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer li a {
+        font-size: 2vw;
+    }
+    footer li {
+        font-size: 2vw;
+    }
+    #stg {
+        width: 70vw;
+    }
+    #stg ul {
+        display: flex;
+        justify-content: center;
+
+        list-style: none;
+    }
+    .stg-icon {
+        height: 10vw;
+
+        margin: 0.4vw;
+    }
 }
