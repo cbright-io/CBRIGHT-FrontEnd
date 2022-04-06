@@ -211,14 +211,12 @@ footer {
     justify-content: center;
 }
 
-#socials img {
+
+.socials {
     height: 8vw;
     width: 8vw;
 }
-
-.social {
-    height: 7vw;
-}
+ 
 
 #socials-h2 {
     margin-bottom: 2vw;
@@ -316,7 +314,7 @@ footer h2 {
 }
 
 .stg-icon {
-    height: 4vw;
+    height: 6.8vw;
 
     margin: 0.2vw;
 

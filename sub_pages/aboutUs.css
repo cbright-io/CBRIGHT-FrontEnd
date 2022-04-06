@@ -141,7 +141,7 @@ nav a:hover {
     list-style: none;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 .member{
@@ -201,6 +201,7 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 
 .socials {
     height: 8vw;
