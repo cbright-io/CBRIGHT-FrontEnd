@@ -171,6 +171,16 @@ button:hover {
     background-color: rgba(190, 190, 190, 0.8);
 }
 
+article {
+    font-family: var(--ff-barlow);
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(78, 76, 76);
+
+    margin: 4vw 0px;
+
+    width: 40vw;
+}
 
 
 /* footer */
@@ -347,6 +357,11 @@ footer h2 {
     #container {
         margin-top: 12vw;
         padding: 10vw 15vw;
+    }
+
+    article {
+        font-size: 4vw;
+        width: 50vw;
     }
 
 
