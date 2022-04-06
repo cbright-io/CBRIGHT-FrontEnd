@@ -91,9 +91,13 @@ section {
     margin-top: 10rem;
 }
 
+h2 {
+    font-size: 4vw;
+}
+
 article {
     margin-top: 2rem;
-
+    font-size: 2VW;
     font-family: var(--ff-barlow);
 }
 
@@ -122,14 +126,12 @@ footer {
     justify-content: center;
 }
 
-#socials img {
+
+.socials {
     height: 8vw;
     width: 8vw;
 }
-
-.social {
-    height: 7vw;
-}
+ 
 
 #socials-h2 {
     margin-bottom: 2vw;
@@ -227,7 +229,7 @@ footer h2 {
 }
 
 .stg-icon {
-    height: 4vw;
+    height: 6.8vw;
 
     margin: 0.2vw;
 
