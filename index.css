@@ -637,7 +637,7 @@ footer h2 {
         font-size: 7vw;
         line-height: 6.8vw;
 
-        top: 27vw
+        top: 25vw
     }
     #water-splash {
         width: 130vw;
@@ -648,7 +648,7 @@ footer h2 {
     #iphone-landing-page {
         height: 100vw;
 
-        top: 42vw;
+        top: 44vw;
     }
     #download-links {
         top: 145vw;
@@ -691,7 +691,13 @@ footer h2 {
     font-size: 5vw;
     
     margin-top: 2vw;
-}
+    }
+
+    #strategy-sub-title{
+        font-size: 3.5vw;
+
+        margin-top: 2vw;
+    }
 
     .steps-caption {
         font-size: 5vw;
