@@ -116,13 +116,15 @@ nav a:hover {
 }
 
 #team-photo-section article {
-    width: 20vw;
+    width: 30vw;
 
     font-family: var(--ff-barlow);
     font-size: 2vw;
     font-weight: 400;
 
     margin-top: 0.2vw;
+
+    margin-bottom: 2vw;
 }
 
 /* team section */
@@ -175,6 +177,8 @@ nav a:hover {
     font-family: var(--ff-barlow);
     font-size: 1vw;
     padding: 2vw;
+
+    
 }
 
 /* footer */
