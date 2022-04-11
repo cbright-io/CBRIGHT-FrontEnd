@@ -94,7 +94,11 @@ main {
     background-repeat: no-repeat;
     border-radius: 1vw;
 
-    padding: 7vw 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3vw 2vw;
 
     box-shadow: 0 0 200px rgba(134, 131, 131, 0.9) inset;
 }
@@ -114,7 +118,7 @@ strong {
 }
 
 form {
-    padding: 4vw;
+    padding: 2vw;
 
     display: flex;
     flex-direction: row;
@@ -175,11 +179,16 @@ article {
     font-family: var(--ff-barlow);
     text-align: center;
     font-size: 2vw;
-    color: rgb(78, 76, 76);
+    color: rgb(58, 56, 56);
+    font-weight: 400;
 
     margin: 4vw 0px;
 
     width: 40vw;
+}
+
+i {
+    color: rgb(58, 56, 56);
 }
 
 
