@@ -89,7 +89,7 @@ main {
 }
 
 #container {
-    background-image: url("../assets/backgrounds/iceland.jpg");
+    background-image: url("../assets/backgrounds/forrest.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1vw;
@@ -100,7 +100,7 @@ main {
 
     padding: 3vw 2vw;
 
-    box-shadow: 0 0 200px rgba(134, 131, 131, 0.9) inset;
+    box-shadow: 0 0 400px rgba(134, 131, 131, 0.9) inset;
 }
 
 #contact-h2 {
@@ -118,10 +118,10 @@ strong {
 }
 
 form {
-    padding: 2vw;
+    padding: 3vw 8vw;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -152,6 +152,22 @@ input::placeholder {
     color: rgb(190, 190, 190);
 }
 
+textarea {
+    width: 30vw;
+    height: 20vw;
+
+    font-family: var(--ff-barlow);
+    font-size: 1.4vw;
+    text-align: center;
+
+    color: rgb(190, 190, 190);
+    background-color: rgb(255, 255, 255);
+
+    border: none;
+    border-radius: 1vw;
+    margin: 2vw
+}
+
 button {
     height: 5vw;
     width: 15vw;
@@ -179,7 +195,7 @@ article {
     font-family: var(--ff-barlow);
     text-align: center;
     font-size: 2vw;
-    color: rgb(58, 56, 56);
+    color: rgb(225, 222, 222);
     font-weight: 400;
 
     margin: 4vw 0px;
@@ -188,7 +204,7 @@ article {
 }
 
 i {
-    color: rgb(58, 56, 56);
+    color: rgb(225, 222, 222);
 }
 
 
@@ -362,13 +378,29 @@ footer h2 {
 
     #container {
         margin-top: 12vw;
-        padding: 10vw 15vw;
     }
 
     article {
         font-size: 4vw;
         width: 50vw;
     }
+
+    input {
+    width: 60vw;
+   
+    }
+
+    input::placeholder {
+        color: rgb(190, 190, 190);
+    }
+
+    textarea {
+        width: 60vw;
+        
+        font-size: 1.8vw;
+        
+    }
+
 
 
     /* footer */ 
