@@ -13,11 +13,10 @@
             rel="stylesheet"
         />
 
-        <link rel="stylesheet" href="aboutUs.css" />
-       
-        <title>CBRIGHT | About us</title>
-    </head>
+        <title>CBRIGHT | Contact</title>
 
+        <link rel="stylesheet" href="contact.css" />
+    </head>
     <body>
         <nav>
             <a href="../index.html" id="nav-left">CBRIGHT</a>
@@ -29,62 +28,33 @@
         </nav>
 
         <main>
-            <section id="team-photo-section">
-                <aside>
-                    <div>
-                        <img
-                            id="team-photo"
-                            src="../assets/founders/team-photo.jpg"
+
+            <div id="container">
+                
+                <article>
+                    <strong>CONTACT</strong><br />
+                    <br />
+                    <i>Get in touch with us by filling out the form below</i>
+                </article>
+
+                <form name="contact" method="POST" data-netlify="true" id="contact-form">
+                    <p>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="your.email@example.com"
                         />
-                    </div>
-                </aside>
+                    </p>
+                    <p>
+                        <textarea name="textbox" placeholder="Message"></textarea>
+                    </p>
 
-                <aside>
-                    <div>
-                        <h3>Our Vision</h3>
-                        <article>
-                           We develop solutions that contribute to a better life for generations to come.
-                        </article>
-                        <h3>Our Mission</h3>
-                        <article>We inspire the new generation to a more sustainable consumption behavior, with the goal to reduce 6 million tonnes of CO2 every year.
-                        </article>
-                    </div>
-                </aside>
-            </section>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+            </div>
 
-            <section id="team-section">
-                <h2 id="team-text">TEAM</h2>
-
-                <ul id="team-icons">
-                    <li class="member" id="markus-li">
-                        <img src="../assets/founders/Markus.jpg" />
-                        <div class="text">
-                            <h2>MARKUS</h2>
-                            <h3>CEO</h3>
-                            <article>
-                                Markus was born in Germany, and is an
-                                experienced manager with expertise in
-                                business development and scaling global
-                                businesses. He worked as a manager in
-                                manufacturing and semiconductor sector
-                                at Rockwool and Jenoptik, two technology
-                                world leading corporations.
-                            </article>
-                        </div>
-                    </li>
-
-                    <li class="member" id="inbal-li">
-                        <img src="../assets/founders/Inbal.jpg" />
-                        <div class="text">
-                            <h2>INBAL</h2>
-                            <h3>CFO</h3>
-                            <article>
-                                Inbal was born in Israel, and is an experienced manager with financial expertise. She started her career as a consultant and manager in Deloitte and Moody’s in Tel Aviv. Inbal will be responsible for the financial development as well as the data modelling and analytics.
-                            </article>
-                        </div>
-                    </li>
-                </ul>
-            </section>
         </main>
 
         <footer>
@@ -140,10 +110,10 @@
                     <li>
                         <a href="./subscribe.html">Get the App</a>
                     </li>
-
                     <li>
                         <a href="./contact.html">Contact</a>
                     </li>
+
                 </ul>
 
                 <ul class="footer-ul" id="company">
@@ -175,6 +145,7 @@
                     <li>All rights reserved</li>
                 </ul>
             </div>
+
             <div id="stg">
                 <ul>
                     <li>
