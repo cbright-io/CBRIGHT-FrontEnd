@@ -89,7 +89,7 @@ main {
 }
 
 #container {
-    background-image: url("../assets/backgrounds/forrest.jpg");
+    background-image: url("../assets/backgrounds/forrest.webp");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1vw;
