@@ -132,6 +132,7 @@ main {
     left: 12vw;
 
     z-index: 2;
+
 }
 
 #iphone-landing-page {
@@ -152,6 +153,8 @@ main {
 
     position: absolute;
     top: 95vw;
+
+    z-index: 5;
 }
 
 #download-links img { 
