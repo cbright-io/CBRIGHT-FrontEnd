@@ -362,7 +362,7 @@ footer h2 {
 
     #container {
         margin-top: 12vw;
-        padding: 10vw 15vw;
+        padding: 10vw 5vw;
     }
 
     article {
@@ -370,6 +370,17 @@ footer h2 {
         width: 50vw;
     }
 
+    input {
+        width: 60vw;
+        height: 9vw;
+
+        font-size: 3.2vw;
+        color: rgb(58, 56, 56);
+    }
+    button {
+        height: 9vw;
+             font-size: 3.2vw;
+    }
 
     /* footer */ 
     /* */ 
