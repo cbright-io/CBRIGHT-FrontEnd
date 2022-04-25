@@ -89,7 +89,6 @@ main {
 }
 
 #container {
-    background-image: url("../assets/backgrounds/forrest.webp");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1vw;
@@ -99,8 +98,6 @@ main {
     align-items: center;
 
     padding: 3vw 2vw;
-
-    box-shadow: 0 0 400px rgba(134, 131, 131, 0.9) inset;
 }
 
 #contact-h2 {
@@ -110,7 +107,7 @@ main {
 
     text-align: center;
 
-    color: white;
+    color: rgb(94, 91, 91);
 }
 
 strong {
@@ -124,13 +121,16 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    /* border: solid 2px rgb(94, 91, 91);
+    border-radius: 1vw; */
 }
 
 label {
     font-family: var(--ff-roboto);
     font-size: 50px;
 
-    color: black;
+    color: rgb(94, 91, 91);
 }
 
 input {
@@ -141,15 +141,15 @@ input {
     font-size: 2vw;
     text-align: center;
 
-    color: rgb(190, 190, 190);
+    color: rgb(94, 91, 91);
     background-color: rgb(255, 255, 255);
 
-    border: none;
+    border: solid 2px rgb(94, 91, 91);
     border-radius: 1vw;
 }
 
 input::placeholder {
-    color: rgb(190, 190, 190);
+    color: rgb(94, 91, 91);
 }
 
 textarea {
@@ -160,11 +160,12 @@ textarea {
     font-size: 1.4vw;
     text-align: center;
 
-    color: rgb(190, 190, 190);
+    color: rgb(94, 91, 91);
     background-color: rgb(255, 255, 255);
 
-    border: none;
+    border: solid 2px rgb(94, 91, 91);
     border-radius: 1vw;
+
     margin: 2vw
 }
 
@@ -178,16 +179,16 @@ button {
     font-size: 3vw;
 
     background-color: rgba(255, 255, 255, 0.3);
-    color: white;
+    color: rgb(94, 91, 91);
 
-    border: none;
+    border: solid 2px rgb(94, 91, 91);
     border-radius: 1vw;
 
     transition: ease-in-out 1s;
 }
 
 button:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
     background-color: rgba(190, 190, 190, 0.8);
 }
 
@@ -195,7 +196,7 @@ article {
     font-family: var(--ff-barlow);
     text-align: center;
     font-size: 2vw;
-    color: rgb(225, 222, 222);
+    color: rgb(94, 91, 91);
     font-weight: 400;
 
     margin: 4vw 0px;
@@ -204,7 +205,7 @@ article {
 }
 
 i {
-    color: rgb(225, 222, 222);
+    color: rgb(94, 91, 91);
 }
 
 
