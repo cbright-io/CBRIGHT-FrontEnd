@@ -199,7 +199,7 @@ main {
 }
 
 .steps-article {
-     width: 25vw;
+    width: 25vw;
 
     font-size: 2vw;
     font-family: var(--ff-barlow);
@@ -224,6 +224,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#right-iphone-screen {
+    width: 80vw;
 }
 
 /* footer */
@@ -424,9 +428,14 @@ footer h2 {
     .steps-slides{
         width: 45vw;
     }
+
+    .steps-text-aside {
+        padding: 0vw 2vw;
+    }
     
     .steps-caption{
-    font-size: 4vw;
+        font-size: 4vw;
+        margin-top: 0vw;
     }
 
     .steps-sub-caption {
@@ -439,6 +448,7 @@ footer h2 {
 
     .steps-article {
         font-size: 3vw;
+        width: 90%
     }
 
     #steps-download {
