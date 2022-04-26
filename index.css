@@ -126,10 +126,10 @@ main {
 
 #water-splash {
     position: absolute;
-    width: 90vw;
+    width: 150vw;
 
-    top: 30vw;
-    left: 12vw;
+    top: -15vw;
+    left: -25vw;
 
     z-index: 2;
 

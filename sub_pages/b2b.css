@@ -149,16 +149,16 @@ main {
 }
 
 .steps-water-splash {
-    height: 60vw;
+    height: 100vw;
 
     position: absolute;
 
-    bottom:-18vw;
-    left: -25vw;
+    bottom:-30vw;
+    left: -30vw;
 }
 
 #right-water-splash {
-    left: 10vw;
+    left: -10vw;
 }
 
 .steps-slides {
