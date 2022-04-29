@@ -597,7 +597,7 @@ footer h2 {
 #stg a, img {
     transition: 1s ease-in-out;
 }
-#stg a:hover, img:hover {
+#stg a:hover, .stg-icon:hover {
     transform: scale(1.05);
 }
 
