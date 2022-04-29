@@ -346,6 +346,13 @@ footer h2 {
     align-items: center;
 }
 
+#solutions a:hover {
+    color:white
+}
+#company a:hover {
+    color:white
+}
+
 #stg {
     width: 70vw;
 }
@@ -363,6 +370,13 @@ footer h2 {
     margin: 0.2vw;
 
     border-radius: 0.2vw;
+}
+
+#stg a, img {
+    transition: 1s ease-in-out;
+}
+#stg a:hover, img:hover {
+    transform: scale(1.05);
 }
 
 #solutions {
